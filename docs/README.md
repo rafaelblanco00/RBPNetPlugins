@@ -1,6 +1,8 @@
 # ¡Bienvenido!
 En este sitio encontrarás la codumentación necesaria para que puedas hacer uso correcto del plugin <code>RBPNetPlugins.js</code>.
 
+!> Si deseas proceder con la instalación del Plugin haz clic [aquí](primeros_pasos.md)
+
 > Ten en cuenta que todos los avances de este plugin los puedes encontrar en la correspondiente cuenta de <code>GitHub</code> y estan desarrollados para ser utilizados con <code>Bootstrap 4</code>, de esta forma encontratás:
 
 * RBP - SmallHelp v.1.0.
