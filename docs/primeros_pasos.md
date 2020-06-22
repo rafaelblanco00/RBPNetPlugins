@@ -8,7 +8,7 @@ Primero que todo, debes tomar en consideración que el plugin al que hace refere
 
 ## Instalación de Bootstrap
 
-Como base, debes proceder con la instalación de los entornos de ejecución <code>Ruby</code> y <code>Node</code> ambos te permitiran, a su debido, tiempo instalar <code>Bootstrap</code> y de igual forma procesar hojas de estilo CSS con SCSS o SASS.
+Como base, debes proceder con la instalación de los entornos de ejecución <code>Ruby</code> y <code>Node</code> ambos te permitiran, a su debido tiempo, instalar <code>Bootstrap</code> y de igual forma procesar hojas de estilo CSS con SCSS o SASS.
 
 > * Para instalar <code>Ruby</code> puedes hacerlo en la página oficial haciendo clic [aquí](https://rubyinstaller.org/2020/04/02/rubyinstaller-2.7.1-1-2.6.6-1-2.5.8-1-and-2.4.10-1-released.html).
 > * Para instalar <code>Node</code> puedes hacerlo en la página oficial haciendo clic [Acá](https://nodejs.org/es/)
