@@ -152,15 +152,26 @@ Lo anterior hace referencia a:
 * <code>gsap.min.js</code>: libreria GSAP para gestionar las animaciones de nuestro plugin.
 * <code>RBPNetPlugins.js</code>: nuestro plugin.
 
-## Descarga de los archivos del plugin.
+## Descarga del Plugin
 
-!> Para que estas nuevas rutas tengan efecto, debes descargar los archivos necesarios para agregar a tu proyecto, estos los puedes encontrar en nuestro repositorio alojado e GitHub: [clic aquí para descargar]().
+!> Para que estas nuevas rutas tengan efecto, debes descargar los archivos necesarios para agregar a tu proyecto, estos los puedes encontrar en nuestro repositorio alojado e GitHub: [clic aquí para descargar](https://github.com/rafaelblanco00/RBPNetPlugins).
+
+El repostirio en <code>GitHub</code> te permitirá descargar los siguientes directorio:
+
+* <code>./docs/</code>: documentación relacionada con el funcionamiento del plugin.
+* <code>./RBPNet/</code>: nuestro plugin y archivos relacionados.
+* <code>./scss/</code>: algunos estilos para modificar la apariencia general de algunos elementos de <code>Bootstrap</code>.
 
 <img src="_media/primeros_pasos/agregando-ficehros-del-plugin-a-proyecto-de-bootstrap.png"/>
 
-Como puedes ver en la imagen necesitas solo dos carpetas:
+Como puedes ver en la imagen solo son necesarias dos carpetas: <code>RBPNet</code> y <code>y CSCC</code>. 
 
-* <code>RBPNet</code>: Archivos correspondientes al plugin.
-* <code>y CSCC</code>: Hojas de estilos SCSS preprocesadas para gestionar la apariencia visual a algunos componentes de bootstraps.
+!>Ten en cuenta que la imagen anterior muestra el lugar en el que debes colocar estos archivos.
 
-> Si aún no haz descargado nuestro plugin te invitamos a hacer clic aquí [puedes hacer clic aquí]().
+Si aún no haz descargado nuestro plugin te invitamos a descargarlo haciendo clic [aquí](https://github.com/rafaelblanco00/RBPNetPlugins).
+
+<img src="_media/primeros_pasos/descarga-repositorio.png"/>
+
+!> Utiliza la imagen de referencia para proceder con la descarga de los archivos necesarios. Ten en cuenta que al descargar, nuestro repositorio en <code>GitHub</code> te brindara un archivo en formato <code>Zip</code> de nombre <code>RBPNetPlugins-master</code> y al descomprimirlo solo debes utilizar los ficheros: <code>RBPNet</code> y <code>scss</code> y ubicarlos en tu carpeta de proyecto de <code>Bootstrap</code> como se explicó anteriormente.
+
+En este punto ya estas todo listo para proceder con la utilización de nuestro plugin en tus proyectos.
