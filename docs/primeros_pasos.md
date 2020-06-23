@@ -128,7 +128,7 @@ Como se puede ver en la plantilla anterior, se hace necesario agregar unos <code
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="scss/main.css">
-    <link rel="stylesheet" href="RBNet/sass/rbp-main.css">
+    <link rel="stylesheet" href="RBPNet/sass/rbp-main.css">
     
     <title>Mi Proyecto - RafaelBlancoNet Plugins</title>
 </head>
