@@ -1,0 +1,53 @@
+
+.VENTANA_MODAL_1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:   $vmodal-fondo-bloqueo-color;
+	z-index: 9999;
+}
+
+.VENTANA_MODAL_1 .vent {
+	min-height: 100px;
+	background-color: $vmodal-backgraound-color;
+	border-radius: $vmodal-border-radius;
+	margin: $vmodal-ventana-margin;
+	margin-bottom: 100px;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.VENTANA_MODAL_1 .vent-cont {
+	margin: 0 20px;
+}
+
+.VENTANA_MODAL_1 .tit {
+	margin-bottom: 3vh;
+}
+
+.VENTANA_MODAL_1 .bots {
+	display: flex;
+	box-sizing: border-box;
+	padding: 3vh 10vh;
+}
+
+.VENTANA_MODAL_1 .filete {
+	height: 1px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.VENTANA_MODAL_1 .info {
+	box-sizing: border-box;
+	padding: 6vh 10vh 4vh 10vh;
+}
+
+h1 {
+	color: #0083ca;
+}
+
+p {
+	color: #525252;
+}

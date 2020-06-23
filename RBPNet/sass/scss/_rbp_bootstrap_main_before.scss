@@ -1,0 +1,20 @@
+$headings-font-family: PT Sans !default;
+$font-family-base: PT Sans !default;
+
+$input-btn-padding-y: 0.75rem !default;
+$btn-border-radius: 0.2rem !default;
+$btn-border-radius-lg: 0.2rem !default;
+$btn-border-radius-sm: 0.2rem !default;
+
+$h1-font-size: 1rem * 2.5 !default;
+$h2-font-size: 1rem * 2 !default;
+$h3-font-size: 1rem * 1.75 !default;
+$h4-font-size: 1rem * 1.5 !default;
+$h5-font-size: 1rem * 1.25 !default;
+$h6-font-size: 1rem !default;
+
+//** BOOTSTRAP VALIDACION DE FORMULARIOS **//
+$form-feedback-valid-color:         #ced4da;
+$form-feedback-invalid-color:       rgba(255,0,0,0.5);
+$form-feedback-icon-valid-color:    #ced4da;
+$form-feedback-icon-invalid-color:   rgba(255,0,0,0.5);
