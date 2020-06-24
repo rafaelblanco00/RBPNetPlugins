@@ -158,7 +158,7 @@
       if (ajustes["ruta_json"] !== "") {
          var que_form__ = $(this);
 
-         $.getJSON(ajustes.ruta_json, function (datos) {
+         $.getJSON(ajustes.ruta_json + ajustes.archivo_json, function (datos) {
             var titulo = ajustes.titulo;
             // /*
 
@@ -240,7 +240,8 @@
    $.fn.smallHelp.defaults = {
       duracion: 0.25,
       titulo: "Tenga en cuenta",
-      ruta_json: "",
+      ruta_json: "RBPNet/plugins/small-help-tips/",
+      archivo_json:"rbp-small-help-f1.json",
       ver_que_tip: false,
    };
 
