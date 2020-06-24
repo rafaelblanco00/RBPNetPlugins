@@ -75,15 +75,15 @@ Para activar nuestro <code>SmallHelp</code> debes declarar dentro del método <c
 ````js
 // declaración de método ready para jQuery
 $(document).ready(function () {
-   // <AQUÍ SE DECLARA EL PAGINADOR>
+   // <AQUÍ SE DECLARA SMALLHELP>
 });
 ````
 
-Para ejecutar el paginador, utilizando el nombre de formuario <code>formulario-1</code>, utiliza el siguiente código.
+Para ejecutar el smallHelp, utilizando el nombre de formuario <code>formulario-1</code>, utiliza el siguiente código.
 
 ````js
-// Ejecución del paginador para los controles de formulario de nombre formulario-1
-$("[name='formulario-1']").paginador();
+// Ejecución de smallHelp para los controles de formulario de nombre formulario-1
+$("[name='formulario-1']").smallHelp();
 ````
 
 ### ¿Como se ejecuta?
@@ -91,9 +91,9 @@ $("[name='formulario-1']").paginador();
 Teniendo en cuenta lo anterior y las indicaciones expuestas generarían el siguiente resultado.
 
 ````js
-// ejecutando el paginador para formulario-1
+// ejecutando smallHelp para formulario-1
 $(document).ready(function () {
-   $("[name='formulario-1']").paginador();
+   $("[name='formulario-1']").smallHelp();
 });
 ````
 

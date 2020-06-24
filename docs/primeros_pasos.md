@@ -93,7 +93,7 @@ La página oficial de Bootstrap pide seguir los siguientes pasos:
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 ````
 
-!> El primero de estos <code>scripts</code> puede ser reemplazado por la última versión de <code>jQuery</code> en caso de ser necesario.
+!> El primero de estos <code>scripts</code> debe ser reemplazado por la última versión de <code>jQuery</code>, en caso de no ser posible, bastaría con eliminar de esta versión (<code>jquery-3.5.1.slim.min.js)</code> la parte <code>.slim</code> de la extensión (quedando como resutlado <code>jquery-3.5.1.min.js</code>) ya que sin esto algunos de nuestro plugins no funcionarian correctamente.
 
 ?> <strong>Nota:</strong> por efectos del uso de <code>RBPNetPlugins.js</code> solo agregaremos los <code>scripts</code> en nuestro <code>body</code> ignorando la hoja de estilos, debido a que para nuestro proyecto, generaremos con <code>sass</code> nuestra propia versión de <code>bootstrap.min.css</code>
 
@@ -110,7 +110,7 @@ Por todo lo anterior, nuestra platilla inicial quedaría de la siguiente forma.
 </head>
 <body>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <!-- ADICIONALES ACÁ -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -136,7 +136,7 @@ Como se puede ver en la plantilla anterior, se hace necesario agregar unos <code
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
-    <script src="RBNet/plugins/RBPNetPlugins.min.js"></script>
+    <script src="RBPNet/plugins/RBPNetPlugins.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -151,10 +151,10 @@ Como se puede ver en la plantilla anterior, se hace necesario agregar unos <code
 
 Lo anterior hace referencia a:
 
-* <code>main.css</code>: nuestro nuevo <code>bootstrap.min.css</code>, incluye modificaciones al tema por defecto de Bootstrap.
-* <code>rbp-main.css</code>: los estilos para la parte visual de nuestro plugin.
+* <code>main.min.css</code>: nuestro nuevo <code>bootstrap.min.css</code>, incluye modificaciones al tema por defecto de Bootstrap.
+* <code>rbp-main.min.css</code>: los estilos para la parte visual de nuestro plugin.
 * <code>gsap.min.js</code>: libreria GSAP para gestionar las animaciones de nuestro plugin.
-* <code>RBPNetPlugins.js</code>: nuestro plugin.
+* <code>RBPNetPlugins.min.js</code>: nuestro plugin.
 
 !> <code>Bootstrap</code> por defecto viene con <code>jquery.slim.min.js</code> este debe ser cambiado por la ultima versión de jQuery, hasta la fecha de esta actualización se recomienda <code>[jquery-3-.5-.1.min.js](https://jquery.com/download/)</code>
 
