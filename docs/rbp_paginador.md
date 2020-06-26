@@ -40,14 +40,8 @@ Eventualmente será necesario contar con iconografía, algunas tipografías y es
 <link rel="stylesheet" href="_ruta_a_tus_estilos_css_/rbp_css/main.css" />
 <link rel="stylesheet" href="_ruta_a_tus_estilos_css_/rbp_css/rbp-main.css" />
 
-<link
-   href="https://fonts.googleapis.com/icon?family=Material+Icons"
-   rel="stylesheet"
-/>
-<link
-   href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto&display=swap"
-   rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet"/>
 ```
 
 > fuente: [fonts.google.com](https://fonts.google.com/).
