@@ -116,6 +116,7 @@ $("[name='form-001']").smallHelp();
 ```js
 // nuestra plantilla quedaría de la siguiente forma
 $(document).ready(function () {
+   $("[name='form-001']").smallHelp();
    $("[name='form-001']").paginador();
 });
 ```
