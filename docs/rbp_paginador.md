@@ -49,16 +49,10 @@ Eventualmente será necesario contar con iconografía, algunas tipografías y es
 Para continuar correctamente, vas a necesitar de una plantilla, la cual es una porción de código HTML (mostrada a continuación) que será utilizada como referencia para controlar e identificar, en tu HTML, al formulario.
 
 ```html
-<form
-   novalidate
-   name="form-001"
-   data-rbp-paginador-form-id="1"
-   action=""
-   class="needs-validation col-lg-12 px-0"
->
+<form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
    <div class="row" data-slides-cont>
       <div class="col">
-         <!-- Aqui debes ingresar tus inputs (rbp-slides) --->
+            <!-- Aqui debes ingresar tus inputs (rbp-slides) --->
       </div>
    </div>
 
@@ -66,20 +60,10 @@ Para continuar correctamente, vas a necesitar de una plantilla, la cual es una p
 
    <div class="form-row" data-paginador-botones>
       <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-         <input
-            type="button"
-            value="Guardar"
-            name="guardar-btn-001"
-            class="btn btn-primary col"
-         />
+            <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
       </div>
       <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-         <input
-            type="button"
-            value="Enviar"
-            name="btn-enviar"
-            class="btn btn-secondary col"
-         />
+            <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
       </div>
    </div>
    <br />
