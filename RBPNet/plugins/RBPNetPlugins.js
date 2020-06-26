@@ -255,12 +255,7 @@
          return false;
       }
 
-      var ajustes = $.extend(
-         {
-            paginas: ".rbp-slide",
-         },
-         ajustes
-      );
+      var ajustes = $.extend({},$.fn.paginador.defaults,ajustes);
 
       var paginador_html =
          '\n\
@@ -564,4 +559,9 @@
          $.fn.imprimir_avance();
       });
    };
+
+   $.fn.paginador.defaults = {
+      paginas: ".rbp-slide"
+   };
+
 })(jQuery);
