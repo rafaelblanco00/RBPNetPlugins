@@ -39,18 +39,8 @@
 
       $("body").prepend(html);
    };
-   $.fn.alertar = function (ajustes, botones__) {
-      var ajsuter = $.extend(
-         {
-            titulo: "",
-            contenido: "",
-            pregunta: "",
-            botones: Array,
-            botonesTipo: Array,
-            botonesCallbacks: Array,
-         },
-         ajustes
-      );
+   $.fn.ventanaModal = function (ajustes, botones__) {
+      var ajustes = $.extend({},$.fn.ventanaModal.defaults, ajustes);
 
       var elemento = ".VENTANA_MODAL_1";
       // definir html
@@ -144,6 +134,20 @@
          ease: "sine",
       });
 
+   };
+
+   $.fn.ventanaModal.defaults = {
+      titulo: "Hola!",
+      contenido:
+         "Este es un mensaje predeterminado de la ventana modal del plugin <b>RBPNetPlugins.min.js</b>. Puedes predeterminarla como lo desees, si deseas saber más haz clic <a target='blank_' href='https://github.com/rafaelblanco00/RBPNetPlugins/blob/master/docs/rbp_ventana_modal.md'>aquí</a>",
+      pregunta: "¿Qué deseas hacer?",
+      botones: ["Aceptar"],
+      botonesTIpo: ["btn-primary"],
+      botonesCallbacks: [
+         function () {
+            // no pasa nada...
+         },
+      ],
    };
 
    $.fn.smallHelp = function (ajustes) {
@@ -477,7 +481,7 @@
 
       // click en botón guarda
       $("[name='guardar-btn-001']").on("click", function () {
-         $.fn.alertar({
+         $.fn.ventanaModal({
             titulo: "¿Desea guardar?",
             contenido:
                "Ha completado el "+$.fn.porcentaje_avance()+" del formulario. Utilice el botón guardar para conservar este avance. Al alcanzar el 100% del diligenciamiento se le permitirá enviar el formulario.",
@@ -524,7 +528,7 @@
          // busco una formulario no validado
          if ($("form").find("input,select,textarea").hasClass("is-invalid")) {
             // si encuentra un campo no válido muestro una ventana modal
-            $.fn.alertar({
+            $.fn.ventanaModal({
                titulo: "¿Desea enviar?",
                contenido:
                   "Para enviar el formulario, debe haber terminado con el diligenciamiento del mismo. Utilice el botón revisar para ir a los campos que necesitan ser diligenciados. Al terminar se le permitirá enviar el formaulario.",

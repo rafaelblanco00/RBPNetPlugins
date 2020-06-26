@@ -154,6 +154,8 @@ Con todo lo anterior nuestra plantilla quedaría de la siguiente forma. Utilíza
     <title>Mi Proyecto - RafaelBlancoNet Plugins</title>
 </head>
 <body>
+
+    <!-- pruebas aquí -->
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
@@ -163,7 +165,7 @@ Con todo lo anterior nuestra plantilla quedaría de la siguiente forma. Utilíza
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <script>
-        // Tus JavaScripts Aquí 
+        // Tus javascripts de prueba acá 
     </script>
 
 </body>

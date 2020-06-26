@@ -55,7 +55,7 @@ De esta forma le especificarás al control de formulario que permita ser control
 Por todo lo anterior, la plantilla quedaría de la siguiente forma:
 
 ````html
-// RBPNetPlugin > SmallHelp para Bootstrap 4 - Plantilla Final
+<!-- RBPNetPlugin > SmallHelp para Bootstrap 4 - Plantilla Final -->
 
 <form name="formulario-1">
     <label for="inputPassword5">Password</label>
