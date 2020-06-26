@@ -121,6 +121,27 @@ Por todo lo anterior, nuestra platilla inicial quedaría de la siguiente forma.
 Como se puede ver en la plantilla anterior, se hace necesario agregar unos <code>adicionales</code> para que nuestro plugin funcione correctamente. De esta forma, procederemos a agregar las siguientes líneas.
 
 ````html
+<!-- Hojas de estilo para bootstrap y nuestro plugin -->
+<link rel="stylesheet" href="scss/main.min.css">
+<link rel="stylesheet" href="RBPNet/sass/rbp-main.min.css">
+
+<!-- Scripts de apoyo al funcionamiento de nuestro plugin -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+<script src="RBPNet/plugins/RBPNetPlugins.min.js"></script>
+
+<!-- Etiqueta de estilos para que inicies con tus pruebas (Recuerda que es una buena práctica ejecutar los scripts al final del body) -->
+<script>
+    <!-- Tus JavaScripts Aquí -->
+</script>
+````
+
+### Plantilla inicial
+
+Con todo lo anterior nuestra plantilla quedaría de la siguiente forma. Utilízala para iniciar tus pruebas y porqué no, agregar nuestro plugin a tus futuros proyectos.
+
+````html
+<!-- RBPNetPlugins Plantilla  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,7 +163,7 @@ Como se puede ver en la plantilla anterior, se hace necesario agregar unos <code
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <script>
-        <!-- Tus JavaScripts Aquí -->
+        // Tus JavaScripts Aquí 
     </script>
 
 </body>

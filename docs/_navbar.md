@@ -2,7 +2,8 @@
 
 * Inicio
 
-  * [Inicio rápido](inicio_rapido.md)
+  * [Inicio](inicio_rapido.md)
+  * [Instalación inicial](primeros_pasos.md)
 
 * Plugins
   * [RBP VModal v.1.0](rbp_ventana_modal.md)
