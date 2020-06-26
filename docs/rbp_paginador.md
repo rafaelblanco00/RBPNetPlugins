@@ -157,9 +157,7 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
       <option value="">(No hay selección)</option>
       <option value="">__OPCION__</option>
    </select>
-   <small class="form-text text-muted" data-rbp-small-help="__SMALL_HELP_ID__"
-      >__SMALL_HELP_MANUAL__</small
-   >
+   <small class="form-text text-muted" data-rbp-small-help="__SMALL_HELP_ID__">__SMALL_HELP_MANUAL__</small>
 </div>
 ```
 
@@ -172,16 +170,8 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
 ```html
 <div class="form-group col-lg-12">
    <label for=""></label>
-   <textarea
-      required
-      maxlength="250"
-      class="form-control"
-      cols="30"
-      rows="5"
-   ></textarea>
-   <small class="form-text text-muted" data-rbp-small-help="__SMALL_HELP_ID__"
-      >__SMALL_HELP_MANUAL__</small
-   >
+   <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+   <small class="form-text text-muted" data-rbp-small-help="__SMALL_HELP_ID__">__SMALL_HELP_MANUAL__</small>
 </div>
 ```
 
