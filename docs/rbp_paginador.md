@@ -169,9 +169,9 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
 
 ```html
 <div class="form-group col-lg-12">
-   <label for=""></label>
+   <label for="">Etiqueta del control de formulario</label>
    <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
-   <small class="form-text text-muted" data-rbp-small-help="__SMALL_HELP_ID__">__SMALL_HELP_MANUAL__</small>
+   <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
 </div>
 ```
 
