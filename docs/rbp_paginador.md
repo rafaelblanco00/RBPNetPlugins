@@ -77,6 +77,33 @@ Para continuar correctamente, vas a necesitar de una plantilla, la cual es una p
    <!-- coloque aquí su plantilla de formulario -->
 </div>
 ````
+## Plantilla HTML
+
+Por todo los anterior, nuestra plantilla quedaría de la siguiente forma.
+
+````html
+<div class="container col-6">
+   <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+      <div class="row" data-slides-cont>
+         <div class="col">
+               <!-- coloca aquí tus slides (uno por cada página que desees en el formulario) --->
+         </div>
+      </div>
+
+      <!-- posición del pie -->
+
+      <div class="form-row" data-paginador-botones>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+         </div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+         </div>
+      </div>
+      <br />
+   </form>
+</div>
+````
 
 > <strong>Nota:</strong><br>Si solo va a utilizar una plantilla o formulario en su página HTML, puede conservar el valor de este atributo que viene por defecto.
 
