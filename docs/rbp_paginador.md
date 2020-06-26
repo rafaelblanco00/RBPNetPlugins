@@ -106,6 +106,13 @@ Como el nombre del formulario de la plantilla es <ocde>form-001</code> nuestro c
 $("[name='form-001']").paginador();
 ```
 
+!> Tenga en cuenta que se debe activar el <code>smallHelp</code> para los controles del formulario.
+
+```js
+// activación de smallHelp para los controles del formulario
+$("[name='form-001']").smallHelp();
+```
+
 ```js
 // nuestra plantilla quedaría de la siguiente forma
 $(document).ready(function () {
