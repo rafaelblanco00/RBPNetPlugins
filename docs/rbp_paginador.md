@@ -175,9 +175,9 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
 
 ```html
 <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-   <label for=""></label>
+   <label for="">Etiqueta del control de formulario</label>
    <input required type="text" class="form-control" />
-   <small class="form-text text-muted" data-rbp-small-help="[__SMALL_HELP_ID__]">__SMALL_HELP__MANUAL__</small>
+   <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
 </div>
 ```
 
@@ -187,12 +187,12 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
 
 ```html
 <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-   <label for=""></label>
+   <label for="">Etiqueta del control de formulario</label>
    <select required class="custom-select">
       <option value="">(No hay selección)</option>
       <option value="">__OPCION__</option>
    </select>
-   <small class="form-text text-muted" data-rbp-small-help="__SMALL_HELP_ID__">__SMALL_HELP_MANUAL__</small>
+   <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
 </div>
 ```
 
