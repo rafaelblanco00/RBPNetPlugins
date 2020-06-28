@@ -100,6 +100,6 @@ $.fn.ventanaModal({
         }
     ]
 });
-
-
 ````
+
+Como puedes ver, nuestra ventana modal es de fácil uso y recuerda que para que puedas extender su uso debes agregar su ejecuación a la acción de un botón o como respuesta a algún proceso que desees informar. Si deseas conocer más de nuestro plugin haz clic [aquí](README.md).
