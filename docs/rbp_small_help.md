@@ -135,4 +135,4 @@ $.smallHelp.defaults.titulo = "Tenga en cuenta:";
 
 - Por último y no menos importante existe la propiedad <code>ver_que_tip</code> que te permitirá en tiempo de diseño, ver a que indice corresponde el texto de ayuda que ha sido asignado a un control de formulario, este dato aparecerá ubidado junto con el botón de ayuda <code>ayuda:t1</code> y tiene como objetivo informar al desarrollador que dicho control de formulario tiene, en este caso, asignado el texto de ayuda de indice <code>t1</code> lo cual se hace muy práctico a la hora de encontrar los textos de ayuda especificados en ciertos controles de formularios.
 
-Como puedes ver, nuestr smallHelp es de fácil uso y ayuda a eliminar ruido visual, cuando de diligenciar formularios se trata. Si deseas conocer más de nuestro plugin haz clic [aquí](README.md).
+Como puedes ver, nuestro smallHelp es de fácil uso y ayuda a eliminar ruido visual, cuando de diligenciar formularios se trata. Si deseas conocer más de nuestro plugin haz clic [aquí](README.md).
