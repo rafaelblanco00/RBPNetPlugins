@@ -200,7 +200,7 @@ Al gregar un slide a nuestra plantilla inicial el resultado debe ser el siguient
 
 Cada uno de estos controles de formulario (inputs, selects, textarea, etc) deben ir ubicados dentro la de una plantilla de slides como lo muestra la imagen a continuación:
 
-<img src="./_media/paginador/ubicacion-en-plantilla.png"/>
+<img src="./_media/paginador/ubicacion-en-plantilla-2.png"/>
 
 !> Debe agregar dentro de la plantilla de slides, tantos controles de formulario como considere necesario, en este sentido, si un slide cuenta con 5 controles de formulario significa que dicho slide representa una página de 5 controles. Al agregar mas de un slide, nuestro paginador mostrará el control de páginas, cuando el formulario solo tiene un solo slide el control de páginas permanece oculto.
 
