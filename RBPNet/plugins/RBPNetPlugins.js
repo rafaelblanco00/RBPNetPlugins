@@ -481,11 +481,11 @@
             contenido:
                "Ha completado el "+$.fn.porcentaje_avance()+" del formulario. Utilice el botón guardar para conservar este avance. Al alcanzar el 100% del diligenciamiento se le permitirá enviar el formulario.",
             pregunta: "¿Qúe desea hacer?",
-            botones: ["Aceptar","Cancelar"],
+            botones: ["Guardar","Cancelar"],
             botonesTipo: ["btn-primary","btn-secondary"],
             botonesCallbacks: [
                function () {
-                  alert("acciones para guardar");
+                  $.fn.paginador.defaults.boton_guardar();
                },function(){
                   // no pasa nada.
                }
@@ -499,12 +499,25 @@
             .closest(".form-row.rbp-slide")
             .index();
 
-            contador = input_invalid;
-            $.fn.pasar_pagina(input_invalid, function(){
-               $.fn.enfocar_campo_invalido();
-            });
-            $.fn.resaltar_pagina_actual();
-            
+            if(input_invalid == -1){
+               // formulario listo para enviar
+               $.fn.ventanaModal({
+                  titulo:"Formulario listo para enviar",
+                  contenido:"Haz logrado diligenciar el fomulario completamente, te invidatmos a guardar tu avance o en caso contrario a proceder con el envío del mismo utilizando los botones correspondientes.",
+                  pregunta:"",
+                  botones:["Aceptar"],
+                  botonesTipo:["btn-primary"],
+                  botonesCallbacks:[function(){
+                     // no pasa nda...
+                  }]
+               });
+            }else{
+               contador = input_invalid;
+               $.fn.pasar_pagina(input_invalid, function(){
+                  $.fn.enfocar_campo_invalido();
+               });
+               $.fn.resaltar_pagina_actual();
+            }
       }
 
       // clic en el botón revisar
@@ -541,7 +554,7 @@
                ],
             });
          } else {
-            alert("A enviar!");
+            $.fn.paginador.defaults.boton_enviar();
          }
       });
 
@@ -561,7 +574,13 @@
    };
 
    $.fn.paginador.defaults = {
-      paginas: ".rbp-slide"
+      paginas: ".rbp-slide",
+      boton_guardar:function(){
+         alert("Utilice la propiedad <b>$.fn.paginador.defaults.btn_guardar</b> para especificar una función que se ejecute al hacer clic en el botón <b>guardar</b>.");
+      },
+      boton_enviar:function(){
+         alert("Utilice la propiedad <b>$.fn.paginador.defaults.btn_enviar</b> para especificar una función que se ejecute al hacer clic en el botón <b>enviar</b>.");
+      }
    };
 
 })(jQuery);

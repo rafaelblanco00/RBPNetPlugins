@@ -35,13 +35,17 @@ Agregarlo es muy sencillo, luego de haberte remitido al aparte [instalación ini
 
    <div class="form-row" data-paginador-botones>
       <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-            <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+         <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
       </div>
       <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-            <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+         <input type="button" value="Revisar" name="btn-revisar" class="btn btn-secondary col" />
       </div>
-   </div>
-   <br />
+      <div class="w-100"></div>
+      <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+         <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+      </div>
+   </div><br />
+
 </form>
 ```
 
@@ -73,10 +77,14 @@ Teniendo en cuenta lo anterior, nuestra plantilla quedaría de la siguiente form
 
       <div class="form-row" data-paginador-botones>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+            <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
          </div>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+            <input type="button" value="Revisar" name="btn-revisar" class="btn btn-secondary col" />
+         </div>
+         <div class="w-100"></div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+            <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
          </div>
       </div><br />
 
@@ -169,10 +177,14 @@ Al gregar un slide a nuestra plantilla inicial el resultado debe ser el siguient
 
       <div class="form-row" data-paginador-botones>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+            <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
          </div>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+            <input type="button" value="Revisar" name="btn-revisar" class="btn btn-secondary col" />
+         </div>
+         <div class="w-100"></div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+            <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
          </div>
       </div><br />
 
@@ -284,10 +296,14 @@ Si agregamos estos tres controles de formulario en nuestra plantilla general el 
 
       <div class="form-row" data-paginador-botones>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+            <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
          </div>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+            <input type="button" value="Revisar" name="btn-revisar" class="btn btn-secondary col" />
+         </div>
+         <div class="w-100"></div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+            <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
          </div>
       </div><br />
 
@@ -360,10 +376,14 @@ Si agregamos un segundo <code>slide</code> con otros controles de formulario com
 
       <div class="form-row" data-paginador-botones>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+            <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
          </div>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
-               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+            <input type="button" value="Revisar" name="btn-revisar" class="btn btn-secondary col" />
+         </div>
+         <div class="w-100"></div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+            <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
          </div>
       </div><br />
 
