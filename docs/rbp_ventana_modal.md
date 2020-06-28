@@ -1,6 +1,6 @@
 # RBP - Ventana Modal v.1.0 
 
-Una hermoso y sencillo cuadro flotante que te permitirá ofrecer información con una ventana superpuesta sobre toda la interfaz de tu sitio web y a la que puedes agregarle los botones, títulos, mensajes y acciones necesarias para que esta cumpla con el proposito que le destines en tu proyecto personal.
+Nuestra ventana es un hermoso y sencillo cuadro flotante que te permitirá ofrecer información con una ventana superpuesta sobre toda la interfaz de tu sitio web y a la que puedes agregarle los botones, títulos, mensajes y acciones necesarias para que esta cumpla con el proposito que le destines en tu proyecto personal.
 
 ?> <b>Nota:</b> Para poder utilizar nuestra <code>ventanaModal</code> es necesario que te remitas al aparte [instalación inicial](primeros_pasos.md), de esta forma podrás contar con todos los requerimientos iniciales para el uso correcto de la misma.
 
@@ -8,23 +8,31 @@ Una hermoso y sencillo cuadro flotante que te permitirá ofrecer información co
 
 ## ¿Cómo funciona?
 
-La idea es muy sencilla, estas en tu proyecto y necesitas informar algo y utilizas nuestra ventana modal. Puedes hacer muchas como como por ejemplo:
+La idea es muy sencilla, estas en tu proyecto y necesitas informar algo y utilizas nuestra ventana modal. Puedes hacer muchas como por ejemplo:
 
 - Puedes especificar un mensaje como contenido de la ventana.
 - Puedes agregarle un título a la ventana de forma que puedas ofrecer un contexto.
-- Puedes acompañar la información con una pregunta, que te permitirá detonar una actitud de interacción
-- Paralelo a esto puedes agregar tantos botones como creas necesario.
-- Por último, puedes asignar una función de respuesta - <b>o callback</b> - para cada botón que especifiques, de forma que puedas controlar las acciones del usuario al haces clic en cada uno de ellos.
+- Puedes acompañar la información con una pregunta, que te permitirá detonar una actitud de interacción.
+- Paralelo a esto puedes agregar tantos botones como creas necesario y defirenciarlos de tres formas diferente.
+- Por último, puedes asignar una función de respuesta - <b>o callback</b> - para cada botón que especifiques, de forma que puedas controlar las acciones del usuario al hacer clic en cada uno de ellos.
 
 ## Plantilla
 
-Para utilizar nuestra ventana modal, no es necesaria plantilla algúna, sin enbargo puedes editar su apariencia haciendo revisión de las hojas de estilo <ocde>scss</code> que vienen incluidad en la ruta <code>RBPNet/sass/scss/_rbp_ventana_modal.scss</code>
+Para utilizar nuestra ventana modal, no es necesaria plantilla html algúna, sin enbargo puedes editar su apariencia haciendo una cuidadosa revisión de las hojas de estilo <ocde>scss</code> que vienen incluidas en la ruta <code>RBPNet/sass/scss/_rbp_ventana_modal.scss</code>
 
 ## ¿Cómo se ejecuta?
 
+!> Para ejecutar nuestra ventana modal, debes contar con la respectiva declaración del método ready, lo que te permitirá ejecutar códigos JS bajo jQuery, en este sentido debes ejecutar nuestra ventana modal dentro del la siguiente función.
+
+````js
+$( document ).ready(function() {
+    // aquí debes ejecutar tu ventana modal
+});
+````
+
 - Por todo lo anterior, y para lograr ejecutar y utilizar nuestra ventana modal solo necesitas el siguiente código <code>javascript</code>.
 
-!> Te recomendamos probar ejecutanto solo la ventana modal, sin propiedades, y luego ir modificandolas una a una para que logres evidenciar cómo y que hace a cada una de estas propiedades.
+!> Te recomendamos probar ejecutanto solo la ventana modal sin propiedades, y luego ir modificandolas una a una para que logres evidenciar cómo, y que hacen, cada una de estas propiedades.
 
 Ejecución básica y con propiedades predeterminadas
 
@@ -92,4 +100,6 @@ $.fn.ventanaModal({
         }
     ]
 });
+
+
 ````
