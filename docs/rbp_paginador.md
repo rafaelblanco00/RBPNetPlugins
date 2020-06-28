@@ -296,3 +296,5 @@ Si agregamos estos tres controles de formulario en nuestra plantilla general el 
 !> Tenga en cuenta que nuestro paginador utilizar <code>smallHelp</code> para mostrar textos de ayuda en cada uno de los controles de formualrio, de esta forma, si desea saber mas del control de nuestro <code>smallHelp</code> te invitamos a revisar la documentación relacionada haciendo clic [aquí](rbp_small_help.md)
 
 <br>
+
+Como puedes ver, nuestro <code>paginador</code> es de fácil uso y ayuda a resolver el problema de creación y control de formularios con grandes volémenes de información. Si deseas conocer más de nuestro plugin haz clic [aquí](README.md).
