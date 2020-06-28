@@ -238,6 +238,8 @@ Para agregar controles de formulario desbes utilizar las plantillas que se muest
 ```
 ### Plantilla de prueba
 
+### Ejemplo 1: formulario a 1 páginas
+
 Si agregamos estos tres controles de formulario en nuestra plantilla general el resultado deberia ser el siguiente:
 
 ````html
@@ -265,6 +267,82 @@ Si agregamos estos tres controles de formulario en nuestra plantilla general el 
                         <option value="">(No hay selección)</option>
                         <option value="">__OPCION__</option>
                      </select>
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-lg-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+               </div>
+
+         </div>
+      </div>
+
+      <div class="form-row" data-paginador-botones>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+         </div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+         </div>
+      </div><br />
+
+   </form>
+</div>
+````
+### Ejemplo 2: formulario a 2 páginas
+
+Si agregamos un segundo <code>slide</code> con otros controles de formulario como dos campos de texto, el resultado sería el siguiente y en este caso, el paginador estaria visible ya que el formulario cuenta con mas de una página:
+
+````html
+<!-- Plantilla de prueba -->
+<!-- Paginador a 6 columnas de ancho, de una página con 3 controles de formulario (1 input, 1 select y 1 textarea) -->
+<div class="container col-6">
+   <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+
+      <div class="row" data-slides-cont>
+         <div class="col">
+
+               <!-- slide o página no.1 con 3 controles de formulario -->
+               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+                  
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <input required type="text" class="form-control" />
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <select required class="custom-select">
+                        <option value="">(No hay selección)</option>
+                        <option value="">__OPCION__</option>
+                     </select>
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-lg-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+               </div>
+
+               <!-- slide o página no.2 con dos controles de formulario-->
+               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+                  
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <input required type="text" class="form-control" />
                      <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
                   </div>
 
