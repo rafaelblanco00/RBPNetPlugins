@@ -34,13 +34,13 @@ $( document ).ready(function() {
 
 !> Te recomendamos probar ejecutanto solo la ventana modal sin propiedades, y luego ir modificandolas una a una para que logres evidenciar cómo se hace y que controlan cada una de estas propiedades.
 
-### Ejecución básica y con propiedades predeterminadas
+- Ejecución básica y con propiedades predeterminadas
 
 ````js
 $.fn.ventanaModal();
 ````
 
-### Ejecución predeterminada con título propio
+- Ejecución predeterminada con título propio
 
 ````js
 $.fn.ventanaModal({
@@ -48,7 +48,7 @@ $.fn.ventanaModal({
 });
 ````
 
-### Ejecución predeterminada con título y contenido propio
+- Ejecución predeterminada con título y contenido propio
 
 ````js
 $.fn.ventanaModal({
@@ -57,7 +57,7 @@ $.fn.ventanaModal({
 });
 ````
 
-### Ejecución predeterminada con título, contenido y pregunta propia
+- Ejecución predeterminada con título, contenido y pregunta propia
 
 ````js
 $.fn.ventanaModal({
@@ -67,7 +67,7 @@ $.fn.ventanaModal({
 });
 ````
 
-### Ejecución predeterminada con título, contenido, pregunta y 3 botones propios
+- Ejecución predeterminada con título, contenido, pregunta y 3 botones propios
 
 ````js
 $.fn.ventanaModal({
@@ -79,7 +79,7 @@ $.fn.ventanaModal({
 });
 ````
 
-### Ejecución predeterminada con título, contenido, pregunta y 3 botones con sus respectivas funciones de respuesta o CallBacks
+- Ejecución predeterminada con título, contenido, pregunta y 3 botones con sus respectivas funciones de respuesta o CallBacks
 
 ````js
 $.fn.ventanaModal({
