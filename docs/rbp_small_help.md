@@ -4,8 +4,6 @@ Nuestro <code>SmallHelp</code> es un plugin que te permitirá mostrar, de una fo
 
 ## ¿Como funciona?
 
-?> <b>Nota:</b> Para poder utilizar nuestro <code>smallHelp</code> es necesario que te remitas al aparte [instalación inicial](primeros_pasos.md), de esta forma podrás contar con todos los requerimientos iniciales para el uso correcto del mismo.
-
 De esta forma, este es el resultado que obtendrias si después de aplicar nuestro <code>SmallHelp</code>
 
 <img src="_media/small-help/small-help-comparacion.png"/>

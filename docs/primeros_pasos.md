@@ -150,6 +150,9 @@ Con todo lo anterior nuestra plantilla quedaría de la siguiente forma. Utilíza
 
     <link rel="stylesheet" href="scss/main.min.css">
     <link rel="stylesheet" href="RBPNet/sass/rbp-main.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet"/>
     
     <title>Mi Proyecto - RafaelBlancoNet Plugins</title>
 </head>
@@ -176,6 +179,7 @@ Lo anterior hace referencia a:
 
 * <code>main.min.css</code>: nuestro nuevo <code>bootstrap.min.css</code>, incluye modificaciones al tema por defecto de Bootstrap.
 * <code>rbp-main.min.css</code>: los estilos para la parte visual de nuestro plugin.
+* <code>fonts.googleapis.com</code>: algunas tipografias e iconos de [fonts.google.com](https://fonts.google.com/).
 * <code>gsap.min.js</code>: libreria GSAP para gestionar las animaciones de nuestro plugin.
 * <code>RBPNetPlugins.min.js</code>: nuestro plugin.
 

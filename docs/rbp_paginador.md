@@ -1,8 +1,6 @@
 # RBP Paginador
 
-Fácil, sencillo y para Bootstrap 4.
-
-?> Este es un desarrollo para Bootstrap creado por: <strong>Rafael A. Blanco P.</strong>, Cartagena de Indias D. T. y C. / Sur América.
+Nuestro paginador es un sencillo formulario en <code>Bootstrap</code> que te permite agrupar controles (de formulario) en slides que puedes navegar con un selector de páginas de forma que se pueda controlar el diligenciamiento total del mismo, al tiempo que te ofrece opciones para que (por medio de programación adicional) puedas optar por guardar o enviar su contenido.
 
 ## ¿De qué se trata?
 
@@ -10,53 +8,30 @@ Fácil, sencillo y para Bootstrap 4.
 
 <img src="_media/rbp-paginador-banner.png"/>
 
-<code>RBP Paginador</code> es un método del plugin <code>RBPNetPlugins.js</code> creado para <code>Bootstrap 4</code> que permite la creación de un formulario organizado por páginas, de forma que se pueda controlar el número de campos, el envio y validación de los mismos y de igual forma la organización estructural del contenido del mismo por medio de slides los cuales pueden ser navegados en forma de páginas.
+Nuestro paginador está creado para ser utilziado con <code>Bootstrap</code> y permite la creación de un formulario organizado por páginas, de forma que se pueda manipular: el número de controles del formulario; el envío y validación del mismo; y de igual forma la organización estructural de su contenido, por medio de slides, los cuales pueden ser navegados en forma de páginas. De alli el nombre. y como adicional te ofrece un dato de avance para que puedas monitorear el porcentaje de diligenciamiento mientras interactuas con el.
 
-!> Para el uso de este plugin se hace necearia la instalación de <code>Bootstrap 4</code>.
-
-!> Para instalar <code>Bootstrap 4</code> puedes utilizar el siguiente vinculo: [bootstrap.com](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-
-```versión
-(versión) RBP Paginador v.1.0 alpha
-```
+?> <b>Nota:</b> Para poder utilizar nuestro <code>paginador</code> es necesario que te remitas al aparte [instalación inicial](primeros_pasos.md), de esta forma podrás contar con todos los requerimientos iniciales para el uso correcto del mismo.
 
 ## ¿Cómo funciona?
 
-Su funcionamiento es muy sencillo, es un formulario gestionado con Bootstrap, que permite listar por medeio de páginas partes agrupadas de un formulario, de forma que se pueda ofrecer rápidez y orden a la hora de gestionar formularios con grandes volumnes de informaicón.
+Su funcionamiento es muy sencillo, necesitas un formulario, notas que tiene muchos controles o campos y usas nuestro paginador.
 
-!> Este plugin para su correcto funcionamiento, utiliza los métodos: <code>$.fn.alertar</code> y <code>$.fn.smallHelp</code>, los cuales vienen incluidos en el plugin <code>RBNetPlugins.js</code>.
+!> Debes tener en cuenta que para su correcto funcionamiento, este plugin utiliza los métodos: <code>$.fn.alertar</code> y <code>$.fn.smallHelp</code>, los cuales vienen incluidos en el plugin <code>RBPNetPlugins.min.js</code>.
+
+!> Si deseas descargar nuestro plugin te invitamos a hacerlo en nuestro repositorio en GitHub haciendo clic [aquí](https://github.com/rafaelblanco00/RBPNetPlugins).
 
 ## ¿Cómo agregarlo?
 
-Para iniciar debes vincular el plugin a la cabecera de tu página HTML. Para esto, utiliza el siguiente código.
+Agregarlo es muy sencillo, luego de haberte remitido al aparte [instalación inicial](primeros_pasos.md), vas a necesitar de una <code>plantilla html</code>, la cual es una porción de código de marcación (mostrada a continuación) que será utilizada como referencia para controlar e identificar, en tu HTML o tu proyecto a nuestro formulario, al formulario.
 
 ```html
-<script src="tu_ruta_para_archivos_JS/RBNetPlugins.js"></script>
-```
-
-Eventualmente será necesario contar con iconografía, algunas tipografías y estilos vitales para garantizar la apariencia visual de los elementos gráficos del plugin (botones, ventanas, alertas, etc.), para esto, debes agregar en la cabecera de tu HTML los siguientes estilos css y tipografías.
-
-```html
-<link rel="stylesheet" href="_ruta_a_tus_estilos_css_/rbp_css/main.css" />
-<link rel="stylesheet" href="_ruta_a_tus_estilos_css_/rbp_css/rbp-main.css" />
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet"/>
-```
-
-> fuente: [fonts.google.com](https://fonts.google.com/).
-
-Para continuar correctamente, vas a necesitar de una plantilla, la cual es una porción de código HTML (mostrada a continuación) que será utilizada como referencia para controlar e identificar, en tu HTML, al formulario.
-
-```html
+<!-- Plantilla inicial para el paginador -->
 <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
    <div class="row" data-slides-cont>
       <div class="col">
             <!-- coloca aquí tus slides (uno por cada página que desees en el formulario) --->
       </div>
    </div>
-
-   <!-- posición del pie -->
 
    <div class="form-row" data-paginador-botones>
       <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
@@ -70,27 +45,31 @@ Para continuar correctamente, vas a necesitar de una plantilla, la cual es una p
 </form>
 ```
 
-> <strong>Nota:</strong> puede encerrar sus formularios con la siguiente etiqueta para podor controlar, por medio de <code>Bootstrap</code> en ancho del formulario con las clases de control para <ocde>grids</code>.
+> <strong>Nota:</strong> puedes encerrar tus formularios con la siguiente etiqueta para poder controlar, por medio de <code>Bootstrap</code> el ancho del formulario con el uso de las clases de control compositivo con base en columnas denominadas <code>grids</code>.
 
 ````html
+<!-- contenedor a seis columnas de ancho -->
 <div class="container col-6">
    <!-- coloque aquí su plantilla de formulario -->
 </div>
 ````
+> Lo anterior es m,uy útil para lograr que el formulario luzca atractivo a la vista y no tome todo el ancho del navegador. Este paso puede ser omitido y no afecta el funcionamiento de nuestro paginador.
+
 ## Plantilla HTML
 
-Por todo los anterior, nuestra plantilla quedaría de la siguiente forma.
+Teniendo en cuenta lo anterior, nuestra plantilla quedaría de la siguiente forma.
 
 ````html
 <div class="container col-6">
    <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+
       <div class="row" data-slides-cont>
          <div class="col">
-               <!-- coloca aquí tus slides (uno por cada página que desees en el formulario) --->
+
+               <!-- coloca aquí tus plantillas para slides (uno por cada página que desees en el formulario) --->
+
          </div>
       </div>
-
-      <!-- posición del pie -->
 
       <div class="form-row" data-paginador-botones>
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
@@ -99,13 +78,11 @@ Por todo los anterior, nuestra plantilla quedaría de la siguiente forma.
          <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
                <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
          </div>
-      </div>
-      <br />
+      </div><br />
+
    </form>
 </div>
 ````
-
-> <strong>Nota:</strong><br>Si solo va a utilizar una plantilla o formulario en su página HTML, puede conservar el valor de este atributo que viene por defecto.
 
 ## ¿Cómo lo ejecuto?
 
@@ -114,19 +91,20 @@ Luego de haber adjuntado el plugin y haber agregado la plantilla al cuerpo (body
 !> Tenga en cuenta que este código JS (jQuery) debe estar definido como una <code>sentencia</code>, del parámetro <code>function</code>, del método <code>ready</code>, de la declaración inicial de <cdoe>jQuery</code>, como se muestra a continuación.
 
 ```js
+// Inicialización de jQuery para el documento actual
 $(document).ready(function () {
    // en esta posición debe ejecutar el paginador
 });
 ```
 
-Teniendo esto en cuenta se ejecuta el paginador por medio del siguiente código.
+Teniendo esto en cuenta, se ejecuta el paginador por medio del siguiente código.
 
 ```js
 // ejecuación del paginador
 $("[name='tu_nombre_de_formulario']").paginador();
 ```
 
-Como el nombre del formulario de la plantilla es <ocde>form-001</code> nuestro código quedaría de la siguiente forma.
+Como el nombre del formulario de la plantilla es <ocde>form-001</code> el código anterior quedaría de la siguiente forma.
 
 ```js
 // ejecuación del paginador para un formulario de nombre form-001
@@ -140,38 +118,87 @@ $("[name='form-001']").paginador();
 $("[name='form-001']").smallHelp();
 ```
 
+### Ejecución
+
+Por todo lo anterior, nuestra código para la ejecuación de nuestro paginador seria el siguiente:
+
 ```js
-// nuestra plantilla quedaría de la siguiente forma
+// Plantilla jQuery para ejecución del paginador
 $(document).ready(function () {
    $("[name='form-001']").smallHelp();
    $("[name='form-001']").paginador();
 });
 ```
 
-!> Tenga en cuenta que el paginador debe ser ejecutado con un selector <code>jQuery</code> que apunte a una plantilla (formulario) para que de esta forma, todo el control del método <code>paginador();</code>, recaiga sobre el formulario especificado.
+!> Tenga en cuenta que nuestro <code>paginador</code> y nuestro <cdoe>smallHelp</code> debe ser ejecutado con un selector <code>jQuery</code> que apunte a una plantilla (formulario) para que de esta forma, todo el control del método <code>paginador();</code>, recaiga sobre el formulario especificado.
 
 ## Aja! ¿Y cómo agrego páginas?
 
-En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (slides) es muy sencillo, para esto se necesita de una plantilla que le permitirá agregar campos y grupos de campos como lo desees.
+En el paginador cada pagina es denominada <code>slide</code>, agregar páginas (slides) es muy sencillo, para esto se necesita de una plantilla que te permitirá agregar campos y grupos de campos como lo desees.
 
-> Agregando una página
+> Plantilla para agregar una página o slide.
 
 ```html
-<!-- plantilla de slides -->
+<!-- plantilla para agregar slides al paginador -->
 <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
-   <!-- Aquí debe agregar la plantilla de cada elemento de formulario que necesite -->
+   <!-- Aquí debe agregar los controles de formulario que necesite -->
 </div>
 ```
+Los <code>slides</code> deben ser agregados en la posición determinada para ellos en la plantilla inicial, como lo muestra la siguiente imagen:
 
-> Tenga en cueta que usted puede agregar elementos de formulario tales como:
+<img src="./_media/paginador/ubicacion-en-plantilla.png"/>
+
+Al gregar un slide a nuestra plantilla inicial el resultado debe ser el siguiente:
+
+````html
+<!-- Plantilla de un paginador a 6 columnas de ancho, de una página y sin controles de formularios -->
+<div class="container col-6">
+   <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+
+      <div class="row" data-slides-cont>
+         <div class="col">
+
+               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+
+                  <!-- Aquí debe agregar los controles de formulario que necesite -->
+
+               </div>
+
+         </div>
+      </div>
+
+      <div class="form-row" data-paginador-botones>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+         </div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+         </div>
+      </div><br />
+
+   </form>
+</div>
+````
+
+> Tenga en cuenta que usted puede agregar, dentro de cada slide agregado, controles de formuario tales como:
 >
 > -  Inputs
 > -  Selects
 > -  y Textareas.
 
-# Agregando INPUTs
+Cada uno de estos controles de formulario (inputs, selects, textarea, etc) deben ir ubicados dentro la de una plantilla de slides como lo muestra la imagen a continuación:
 
-> Agregando un <code>input tipo="text"</code>
+<img src="./_media/paginador/ubicacion-en-plantilla.png"/>
+
+!> Debe agregar dentro de la plantilla de slides, tantos controles de formulario como considere necesario, en este sentido, si un slide cuenta con 5 controles de formulario significa que dicho slide representa una página de 5 controles. Al agregar mas de un slide, nuestro paginador mostrará el control de páginas, cuando el formulario solo tiene un solo slide el control de páginas permanece oculto.
+
+## ¿Cómo agregar controles de formulario?
+
+Para agregar controles de formulario desbes utilizar las plantillas que se muestran a continuación.
+
+### Agregando INPUTs
+
+> La siguiente plantilla te permitirá agregar control de formulario input tipo <code>text</code>.
 
 ```html
 <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -181,9 +208,9 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
 </div>
 ```
 
-# Agregando SELECTs
+### Agregando SELECTs
 
-> Agregando un <code>select</code>
+> La siguiente plantilla terpemitirá agregar un control de formulario tipo <code>select</code>
 
 ```html
 <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
@@ -198,9 +225,9 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
 
 <br>
 
-# Agregando TEXTAREAs
+### Agregando TEXTAREAs
 
-> Agregando un <code>textarea</code>
+> La siguiente plantilla te permitirá agregar un control de formulario tipo <code>textarea</code>
 
 ```html
 <div class="form-group col-lg-12">
@@ -209,81 +236,63 @@ En el paginador a cada pagina se le llama <code>slide</code>, agregar páginas (
    <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
 </div>
 ```
+### Plantilla de prueba
+
+Si agregamos estos tres controles de formulario en nuestra plantilla general el resultado deberia ser el siguiente:
+
+````html
+<!-- Plantilla de prueba -->
+<!-- Paginador a 6 columnas de ancho, de una página con 3 controles de formulario (1 input, 1 select y 1 textarea) -->
+<div class="container col-6">
+   <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+
+      <div class="row" data-slides-cont>
+         <div class="col">
+
+               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+                  
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <input required type="text" class="form-control" />
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <select required class="custom-select">
+                        <option value="">(No hay selección)</option>
+                        <option value="">__OPCION__</option>
+                     </select>
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+                  <!-- control de formulario tipo input -->
+                  <div class="form-group col-lg-12">
+                     <label for="">Etiqueta del control de formulario</label>
+                     <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  </div>
+
+               </div>
+
+         </div>
+      </div>
+
+      <div class="form-row" data-paginador-botones>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
+         </div>
+         <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+               <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+         </div>
+      </div><br />
+
+   </form>
+</div>
+````
+
+!> Tenga en cuenta que nuestro paginador utilizar <code>smallHelp</code> para mostrar textos de ayuda en cada uno de los controles de formualrio, de esta forma, si desea saber mas del control de nuestro <code>smallHelp</code> te invitamos a revisar la documentación relacionada haciendo clic [aquí](rbp_small_help.md)
 
 <br>
-
-# Activando Small Help
-
-> Para activar <code>smallHelp</code> se debe agregar un archivo en formato <code>json</code> que contenga todos los tips a utilizar en el formulario.
-
-<img src="_media/small-help-banner.png"/>
-
-<code>SmallHelp</code> activa la posibilidad de indicar a quien diligencia el formulario, instrucciones para que la tarea sea llevada a cabo correctamente y el campo cumpla con la recepción de la información que este solicita. De esta forma se puede acceder a este mensaje con solo hacer clic en un botón de ayuda ubicado a la derecha de la etiqueta de cada uno de los campos de formularios.
-
-!> Para activarlo se debe agregar un documento en formato JSON en algun lugar del su proyecto web. Utilice el formato sugerido a continuación.
-
-```json
-// Documento guardado como ./rbp-small-help-f1.json
-
-{
-   "tips": {
-      "t1": "Detalle el nombre de la entidad tal y como aparece en el documento de constitución ante la Cámara de comercio de Barranquilla.",
-      "t2": "",
-      "t3": "",
-      "t4": "",
-      "t5": "",
-      "t6": "",
-      "t7": "",
-      "t8": "",
-      "t9": "",
-      "t10": ""
-   }
-}
-```
-
-> <strong>Nota:</strong> puede agregar tandos mensajes como sea posible, esta forma de agregar los tips se creó para facilitar los procesos de correción ortografica y actualización de sugerencias en campos de formularios.
-
-Para activar <code>SmallHelps</code> solo debe ejecutar el siguiente código <code>jQuery</code> que se muestra a continuación.
-
-```js
-$("[name='____NOMBRE_DE_SU_FORMULARIO____']").smallHelp({
-   titulo: "Tenga en cuenta",
-   ruta_json:
-      "___TU_RUTA_A_CARPETA_DE_JAVASCRIPTS___/RBNet/rbp-bootstrap-small-help/rbp-small-help-f1.json",
-   ver_que_tip: true,
-});
-```
-
-?> Puedes utilizar el código anterior de una forma corta, con solo especificar la ruta del archivo.
-
-```js
-$("[name='____NOMBRE_DE_SU_FORMULARIO____']").smallHelp({
-   ruta_json:
-      "___TU_RUTA_A_CARPETA_DE_JAVASCRIPTS___/RBNet/rbp-bootstrap-small-help/rbp-small-help-f1.json",
-});
-```
-
-?> De igual forma, en una línea adicional, puedes especificar ajustes que puedes manejar de forma global como una ruta única para el archivo <code>json</code> contenedor de todos los tips, un título global o por defecto para todos los tips y el modo de verificación activado (<code>ver_que_tip</code>) para cuando lo necesites. Esto se puede lograr de la siguiente forma.
-
-```js
-$.fn.smallHelp.defaults.titulo = "Tenga en cuenta";
-$.fn.smallHelp.defaults.ruta_json =
-   "___TU_RUTA_A_CARPETA_DE_JAVASCRIPTS___/RBNet/rbp-bootstrap-small-help/rbp-small-help-f1.json";
-$.fn.smallHelp.defaults.ver_que_tip = true;
-```
-
-?> Y el código de activación del <code>smallHelp</code> se reduciría a esta pocas líneas.
-
-```js
-$("[name='____NOMBRE_DE_SU_FORMULARIO____']").smallHelp();
-```
-
-> En el código anterior, cada uno de sus propiedades permiten respectivamente:
->
-> -  <b>Titulo:</b> Agregar un titulo al inicio del tip (El cual aparece después de hacer clic en el correspondiente <code>botón de ayuda</code> que luego de la activación.).
-> -  <b>ruta_json:</b> Referenciar un archivo <code>json</code> contenedor de todos los tips relacionados a uno o varios formularios.
-> -  <b>ver_que_tip:</b> Ayuda visual tipo <code>Ayuda:t35</code> que aparece a la derecha de cada botón de ayuda, y permite identificar el tip de un campo de formulario, cara al archivo json especificado. Esta propiedad, debe estar definida como false al lanzar el sitio y publicar.
-
-> Luego de haber creado el documento en formato <code>json</code> y haber ejecutado el codigo anterior, solo resta especficar el correspondiente código <code>t1, t2, ..., tn</code> del <code>json</code> en la etiqueta <code>small</code> de cada uno de los elementos de formulario agregados con las plantillas mostradas anateriormenten en los partes: <code>agregando inputs</code>, <code>agregando textareas</code> y <code>agregando selects</code> y que están especificados con el texto <code>**SMALL_HELP_ID**</code>
-
-<img src="_media/small-help-ejemplo.png"/>
