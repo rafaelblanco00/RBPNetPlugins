@@ -213,4 +213,16 @@ p {
   margin: 20px 0 0 5px;
   size: 1rem;
 }
+
+.rbp-control-name {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: absolute;
+  right: 5px;
+  padding: 0px 10px;
+  top: 4px;
+  font-family: "PT Sans";
+  font-size: .83rem;
+  color: rgba(0, 0, 0, 0.5);
+}
 /*# sourceMappingURL=rbp-main.css.map */

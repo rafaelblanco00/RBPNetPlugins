@@ -246,7 +246,7 @@
       titulo: "Tenga en cuenta",
       ruta_json: "RBPNet/plugins/small-help-tips/",
       archivo_json:"rbp-small-help-f1.json",
-      ver_que_tip: false,
+      ver_que_tip: false
    };
 
    $.fn.paginador = function (ajustes) {
@@ -571,6 +571,22 @@
       $("[data-avance]").on("click", function () {
          $.fn.imprimir_avance();
       });
+
+      if(ajustes.ver_que_control == true){
+         $.each($(ajustes.paginas).find(".form-group").find("input,select,textarea"),function(){
+            var padre = $(this).parent();
+            var control_name = padre.prop("tagName");
+            var name_ = "";
+            if($(this).attr("name")){
+               name_ = "name: "+$(this).attr("name");
+            }else{
+               name_ = "(no name)";
+            }
+            var html = "<div class='rbp-control-name'>"+name_+"</div>";
+            padre.prepend(html);
+         });
+      }
+      
    };
 
    $.fn.paginador.defaults = {
@@ -580,7 +596,8 @@
       },
       boton_enviar:function(){
          alert("Utilice la propiedad <b>$.fn.paginador.defaults.btn_enviar</b> para especificar una función que se ejecute al hacer clic en el botón <b>enviar</b>.");
-      }
+      },
+      ver_que_control:false
    };
 
 })(jQuery);

@@ -215,7 +215,7 @@ Para agregar controles de formulario desbes utilizar las plantillas que se muest
 ```html
 <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
    <label for="">Etiqueta del control de formulario</label>
-   <input required type="text" class="form-control" />
+   <input name="" required type="text" class="form-control" />
    <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
 </div>
 ```
@@ -227,7 +227,7 @@ Para agregar controles de formulario desbes utilizar las plantillas que se muest
 ```html
 <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
    <label for="">Etiqueta del control de formulario</label>
-   <select required class="custom-select">
+   <select name="" required class="custom-select">
       <option value="">(No hay selección)</option>
       <option value="">__OPCION__</option>
    </select>
@@ -244,7 +244,7 @@ Para agregar controles de formulario desbes utilizar las plantillas que se muest
 ```html
 <div class="form-group col-lg-12">
    <label for="">Etiqueta del control de formulario</label>
-   <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+   <textarea name="" required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
    <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
 </div>
 ```
@@ -329,14 +329,14 @@ Si agregamos un segundo <code>slide</code> con otros controles de formulario com
                   <!-- control de formulario tipo input -->
                   <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                      <label for="">Etiqueta del control de formulario</label>
-                     <input required type="text" class="form-control" />
+                     <input name="" required type="text" class="form-control" />
                      <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
                   </div>
 
                   <!-- control de formulario tipo input -->
                   <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                      <label for="">Etiqueta del control de formulario</label>
-                     <select required class="custom-select">
+                     <select name="" required class="custom-select">
                         <option value="">(No hay selección)</option>
                         <option value="">__OPCION__</option>
                      </select>
@@ -346,7 +346,7 @@ Si agregamos un segundo <code>slide</code> con otros controles de formulario com
                   <!-- control de formulario tipo input -->
                   <div class="form-group col-lg-12">
                      <label for="">Etiqueta del control de formulario</label>
-                     <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+                     <textarea name="" required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
                      <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
                   </div>
 
@@ -358,14 +358,14 @@ Si agregamos un segundo <code>slide</code> con otros controles de formulario com
                   <!-- control de formulario tipo input -->
                   <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                      <label for="">Etiqueta del control de formulario</label>
-                     <input required type="text" class="form-control" />
+                     <input name="" required type="text" class="form-control" />
                      <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
                   </div>
 
                   <!-- control de formulario tipo input -->
                   <div class="form-group col-lg-12">
                      <label for="">Etiqueta del control de formulario</label>
-                     <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+                     <textarea name="" required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
                      <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
                   </div>
 
