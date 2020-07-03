@@ -138,6 +138,19 @@ $(document).ready(function () {
 });
 ```
 
+Si eres desarrollador, te invitamos a utilizar las propiedades <code>ver_que_tip</code> y <code>ver_que_control_name</code> para <code>smallHelp</code> y el <code>paginador</code> respectivamente. De esta forma, podrás visualizar el indice <code>.json</code> de los tips utilizados por los controles de formulario presentes en el paginador, y por el otro lado, los nombres <code>atributo: name<code> de cada uno de los controles de formalario presentes en el paginador.
+
+```js
+// Plantilla jQuery para ejecución del paginador con ayudas visuales para desarrolladores
+$(document).ready(function () {
+   $("[name='form-001']").smallHelp.defaults.ver_que_tip = false;
+   $("[name='form-001']").smallHelp();
+
+   $("[name='form-001']").paginador.defaults.ver_que_control_name = false;
+   $("[name='form-001']").paginador();
+});
+```
+
 !> Tenga en cuenta que nuestro <code>paginador</code> y nuestro <cdoe>smallHelp</code> debe ser ejecutado con un selector <code>jQuery</code> que apunte a una plantilla (formulario) para que de esta forma, todo el control del método <code>paginador();</code>, recaiga sobre el formulario especificado.
 
 ## Aja! ¿Y cómo agrego páginas?

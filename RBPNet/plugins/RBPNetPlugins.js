@@ -572,7 +572,7 @@
          $.fn.imprimir_avance();
       });
 
-      if(ajustes.ver_que_control == true){
+      if(ajustes.ver_que_control_name == true){
          $.each($(ajustes.paginas).find(".form-group").find("input,select,textarea"),function(){
             var padre = $(this).parent();
             var control_name = padre.prop("tagName");
