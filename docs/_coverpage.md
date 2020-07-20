@@ -2,7 +2,7 @@
 
 ![logo](_media/marca-003.png)
 
-- Para una vida fácil con BootsTraps / Hecho con Docsify y muchas horas de juicio.
+- Para una vida fácil con BootsTrap / Hecho con Docsify y muchas horas de juicio.
 
 # BootsTrap / RBPNetPlugins v.1.0 alpha
 
