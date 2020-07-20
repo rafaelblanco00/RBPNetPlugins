@@ -34,7 +34,7 @@ Agregarlo es muy sencillo, luego de haberte remitido al aparte [instalación ini
    </div>
 
    <div class="form-row" data-paginador-botones>
-         <div class="col-6">
+         <div class="col-12 col-lg-5">
             <button class="btn btn-primary w-100" name="guardar-btn-001"
                type="button">Guardar</button>
             <div class="btn-group w-100" role="group" aria-label="Button group">
@@ -76,7 +76,7 @@ Teniendo en cuenta lo anterior, nuestra plantilla quedaría de la siguiente form
       </div>
 
       <div class="form-row" data-paginador-botones>
-            <div class="col-6">
+            <div class="col-12 col-lg-5">
                <button class="btn btn-primary w-100" name="guardar-btn-001"
                   type="button">Guardar</button>
                <div class="btn-group w-100" role="group" aria-label="Button group">
@@ -189,7 +189,7 @@ Al gregar un slide a nuestra plantilla inicial el resultado debe ser el siguient
       </div>
 
       <div class="form-row" data-paginador-botones>
-            <div class="col-6">
+            <div class="col-12 col-lg-5">
                <button class="btn btn-primary w-100" name="guardar-btn-001"
                   type="button">Guardar</button>
                <div class="btn-group w-100" role="group" aria-label="Button group">
@@ -308,7 +308,7 @@ Si agregamos estos tres controles de formulario en nuestra plantilla general el 
       </div>
 
       <div class="form-row" data-paginador-botones>
-            <div class="col-6">
+            <div class="col-12 col-lg-5">
                <button class="btn btn-primary w-100" name="guardar-btn-001"
                   type="button">Guardar</button>
                <div class="btn-group w-100" role="group" aria-label="Button group">
@@ -388,7 +388,7 @@ Si agregamos un segundo <code>slide</code> con otros controles de formulario com
       </div>
 
       <div class="form-row" data-paginador-botones>
-            <div class="col-6">
+            <div class="col-12 col-lg-5">
                <button class="btn btn-primary w-100" name="guardar-btn-001"
                   type="button">Guardar</button>
                <div class="btn-group w-100" role="group" aria-label="Button group">
