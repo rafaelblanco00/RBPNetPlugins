@@ -4,7 +4,7 @@
 
 - Para una vida fácil con BootsTraps / Hecho con Docsify y muchas horas de juicio.
 
-# BootsTrasp / RBP-Plugins v.1.0 alpha
+# BootsTrap / RBPNetPlugins v.1.0 alpha
 
 [GitHub](https://github.com/docsifyjs/docsify/)
 <b>[Iniciar](inicio_rapido.md)</b>
