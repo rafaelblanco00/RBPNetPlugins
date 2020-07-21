@@ -41,3 +41,10 @@ Nuestro SmallHelp amplia la forma de mostrar los tips en <code>Bootstrap</code> 
 <img src="_media/small-help-ejemplo.png"/>
 
 > <b>Nota importante:</b> Estos tips son los mejores! y si deseas saber más haz clic [aquí](rbp_small_help.md).
+
+
+> <b>¡Tu apoyo es muy importante para mi!</b><br>
+> * Utiliza el siguiente botón si deseas apoyar mi trabajo y asi porder seguir construyendo este tipo de recursos. 
+> * Recuerda que estos desarrollos son grátis y estan disponibles para que puedan se utilizados en proyectos web basados en Bootstrap. 
+
+<a target="_blank" href="https://www.buymeacoffee.com/rafaelblanco">![Buy me a Coffe!](_media/BuyMeACoffe-02.png)</a>

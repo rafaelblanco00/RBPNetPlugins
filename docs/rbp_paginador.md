@@ -409,3 +409,9 @@ Si agregamos un segundo <code>slide</code> con otros controles de formulario com
 <br>
 
 Como puedes ver, nuestro <code>paginador</code> es de fácil uso y ayuda a resolver el problema de creación y control de formularios con grandes volémenes de información. Si deseas conocer más de nuestro plugin haz clic [aquí](README.md).
+
+> <b>¡Tu apoyo es muy importante para mi!</b><br>
+> * Utiliza el siguiente botón si deseas apoyar mi trabajo y asi porder seguir construyendo este tipo de recursos. 
+> * Recuerda que estos desarrollos son grátis y estan disponibles para que puedan se utilizados en proyectos web basados en Bootstrap. 
+
+<a target="_blank" href="https://www.buymeacoffee.com/rafaelblanco">![Buy me a Coffe!](_media/BuyMeACoffe.png)</a>

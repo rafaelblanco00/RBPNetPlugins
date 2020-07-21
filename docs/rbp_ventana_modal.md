@@ -103,3 +103,9 @@ $.fn.ventanaModal({
 ````
 
 Como puedes ver, nuestra ventana modal es de fácil uso y recuerda que para que puedas extender su uso debes agregar su ejecuación a la acción de un botón o como respuesta a algún proceso que desees informar. Si deseas conocer más de nuestro plugin haz clic [aquí](README.md).
+
+> <b>¡Tu apoyo es muy importante para mi!</b><br>
+> * Utiliza el siguiente botón si deseas apoyar mi trabajo y asi porder seguir construyendo este tipo de recursos. 
+> * Recuerda que estos desarrollos son grátis y estan disponibles para que puedan se utilizados en proyectos web basados en Bootstrap. 
+
+<a target="_blank" href="https://www.buymeacoffee.com/rafaelblanco">![Buy me a Coffe!](_media/BuyMeACoffe.png)</a>
