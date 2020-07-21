@@ -6,9 +6,11 @@
 
 # BootsTrap / RBPNetPlugins v.1.0 alpha
 
-[GitHub](https://github.com/docsifyjs/docsify/)
 <b>[Iniciar](inicio_rapido.md)</b>
+[GitHub](https://github.com/docsifyjs/docsify/)
 [YouTube](https://www.youtube.com/channel/UCi3w3YDhgkKEy9qrtbLOd6A)
+[Buy me a Coffe](https://www.buymeacoffee.com/rafaelblanco/)
+
 <!-- color de fondo -->
 
 ![color](#f0f0f0)
