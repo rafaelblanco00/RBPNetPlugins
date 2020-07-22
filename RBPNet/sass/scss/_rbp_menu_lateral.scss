@@ -1,0 +1,106 @@
+.rbp-opciones-laterales {
+   left: 0;
+   top: 0;
+   position: fixed;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.25);
+   z-index: 9999;
+}
+
+.sticky {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+   z-index: 999;
+}
+
+.rbp-opciones-laterales-sombra {
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.rbp-ops-lateral-barra-superior {
+//    background-color: #121232;
+   border-bottom: solid 1px rgba(255, 255, 255, 0.25);
+   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rbp-btn-cerrar:hover {
+   cursor: pointer;
+   background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rbp-btn-cerrar {
+   /* background-color: red; */
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+}
+
+.rbp-btn-cerrar > svg {
+   margin-top: 18px;
+   width: 24px;
+   height: 24px;
+   font-size: 24px;
+   opacity: 0.5;
+}
+
+.rbp-op-lateral-titulos {
+   padding-left: 40px;
+}
+.rbp-op-lateral-titulos .caption {
+   font-size: 0.75rem;
+   margin-bottom: 0.3rem;
+   opacity: 0.5;
+}
+
+.rbp-op-lateral-titulos h5 {
+   opacity: 0.8;
+}
+
+.rbp-opciones-btn > div > div:hover {
+   cursor: pointer;
+   background-color: rgba(0, 0, 0, 0.1);
+   padding-left: 25px;
+   transition: all 0.25s;
+}
+.rbp-opciones-btn > div > div {
+    transition: all 0.15s;
+   // height: 50px;
+   border-top: solid 1px rgba(255, 255, 255, 0.1);
+   margin-left: 10px;
+   opacity: 0.5;
+   display: flex;
+   align-content: center;
+   // line-height: 50px;
+   // padding-left: 20px;
+   padding: 15px 0 15px 15px;
+}
+
+.rbp-bar-lateral-sombra-sup {
+   background-image: url(images/top-shadow.png);
+   opacity: 0.8;
+   background-repeat: repeat-x;
+   background-position: top;
+}
+
+.__OPCIONES_LATERAL_VENTANA__ .__pie {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   width: 100%;
+   padding: 30px 46px 30px;
+   opacity: 0.25;
+   position: absolute;
+   bottom: 0px;
+//    background-color: #121232;
+   box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.25);
+   -webkit-box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.25);
+   border-top: solid 1px rgba(255, 255, 255, 0.05);
+}

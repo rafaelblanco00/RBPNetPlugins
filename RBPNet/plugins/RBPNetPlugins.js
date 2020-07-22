@@ -40,7 +40,7 @@
       $("body").prepend(html);
    };
    $.fn.ventanaModal = function (ajustes, botones__) {
-      var ajustes = $.extend({},$.fn.ventanaModal.defaults, ajustes);
+      var ajustes = $.extend({}, $.fn.ventanaModal.defaults, ajustes);
 
       var elemento = ".VENTANA_MODAL_1";
       // definir html
@@ -133,7 +133,6 @@
          stagger: 0.05,
          ease: "sine",
       });
-
    };
 
    $.fn.ventanaModal.defaults = {
@@ -151,7 +150,6 @@
    };
 
    $.fn.smallHelp = function (ajustes) {
-
       // detengo la ejecución del script si el selector no encuentra el elemento al que apunta
       if ($(this).length == 0) {
          return false;
@@ -245,8 +243,8 @@
       duracion: 0.25,
       titulo: "Tenga en cuenta",
       ruta_json: "RBPNet/plugins/small-help-tips/",
-      archivo_json:"rbp-small-help-f1.json",
-      ver_que_tip: false
+      archivo_json: "rbp-small-help-f1.json",
+      ver_que_tip: false,
    };
 
    $.fn.paginador = function (ajustes) {
@@ -255,7 +253,7 @@
          return false;
       }
 
-      var ajustes = $.extend({},$.fn.paginador.defaults,ajustes);
+      var ajustes = $.extend({}, $.fn.paginador.defaults, ajustes);
 
       var paginador_html =
          '\n\
@@ -315,7 +313,7 @@
       </div>'
       );
 
-      $.fn.pasar_pagina = function (contador__,callback__ = function(){}) {
+      $.fn.pasar_pagina = function (contador__, callback__ = function () {}) {
          // oculto el formaulario
          contador = contador__;
          gsap.to(form_, {
@@ -337,7 +335,7 @@
                   .eq(contador__)
                   .attr("data-slide-visible", "");
 
-                  callback__();
+               callback__();
 
                // muestro el formulario
                gsap.to(form_, {
@@ -433,7 +431,6 @@
          });
       };
 
-
       $.fn.validar_todo_el_formulario = function () {
          // valido todo el formulario
          $.each($("form").find("input,select,textarea"), function () {
@@ -441,14 +438,13 @@
                .removeClass("is-valid is-invalid")
                .addClass(this.checkValidity() ? "is-valid" : "is-invalid");
          });
-
       };
 
-      $.fn.porcentaje_avance = function(){
+      $.fn.porcentaje_avance = function () {
          var porcentaje = ($.fn.avance_formulario() * 100).toFixed(0) + "%";
          return porcentaje;
-      }
-      
+      };
+
       $.fn.avance_formulario = function () {
          var total_inputs = form_.find("[data-slides-cont]").find("[required]")
             .length;
@@ -472,8 +468,8 @@
                $(this)
                   .removeClass("is-valid is-invalid")
                   .addClass(this.checkValidity() ? "is-valid" : "is-invalid");
-                  // imprimir avance
-                  $.fn.imprimir_avance();
+               // imprimir avance
+               $.fn.imprimir_avance();
             });
       };
 
@@ -485,49 +481,55 @@
          $.fn.ventanaModal({
             titulo: "¿Desea guardar?",
             contenido:
-               "Ha completado el "+$.fn.porcentaje_avance()+" del formulario. Utilice el botón guardar para conservar este avance. Al alcanzar el 100% del diligenciamiento se le permitirá enviar el formulario.",
+               "Ha completado el " +
+               $.fn.porcentaje_avance() +
+               " del formulario. Utilice el botón guardar para conservar este avance. Al alcanzar el 100% del diligenciamiento se le permitirá enviar el formulario.",
             pregunta: "¿Qúe desea hacer?",
-            botones: ["Guardar","Cancelar"],
-            botonesTipo: ["btn-primary","btn-secondary"],
+            botones: ["Guardar", "Cancelar"],
+            botonesTipo: ["btn-primary", "btn-secondary"],
             botonesCallbacks: [
                function () {
                   $.fn.paginador.defaults.boton_guardar();
-               },function(){
+               },
+               function () {
                   // no pasa nada.
-               }
+               },
             ],
          });
       });
 
-      $.fn.revisar_formulario = function(){
+      $.fn.revisar_formulario = function () {
          var input_invalid = form_
             .find(".is-invalid")
             .closest(".form-row.rbp-slide")
             .index();
 
-            if(input_invalid == -1){
-               // formulario listo para enviar
-               $.fn.ventanaModal({
-                  titulo:"Formulario listo para enviar",
-                  contenido:"Haz logrado diligenciar el fomulario completamente, te invidatmos a guardar tu avance o en caso contrario a proceder con el envío del mismo utilizando los botones correspondientes.",
-                  pregunta:"",
-                  botones:["Aceptar"],
-                  botonesTipo:["btn-primary"],
-                  botonesCallbacks:[function(){
+         if (input_invalid == -1) {
+            // formulario listo para enviar
+            $.fn.ventanaModal({
+               titulo: "Formulario listo para enviar",
+               contenido:
+                  "Haz logrado diligenciar el fomulario completamente, te invidatmos a guardar tu avance o en caso contrario a proceder con el envío del mismo utilizando los botones correspondientes.",
+               pregunta: "",
+               botones: ["Aceptar"],
+               botonesTipo: ["btn-primary"],
+               botonesCallbacks: [
+                  function () {
                      // no pasa nda...
-                  }]
-               });
-            }else{
-               contador = input_invalid;
-               $.fn.pasar_pagina(input_invalid, function(){
-                  $.fn.enfocar_campo_invalido();
-               });
-               $.fn.resaltar_pagina_actual();
-            }
-      }
+                  },
+               ],
+            });
+         } else {
+            contador = input_invalid;
+            $.fn.pasar_pagina(input_invalid, function () {
+               $.fn.enfocar_campo_invalido();
+            });
+            $.fn.resaltar_pagina_actual();
+         }
+      };
 
       // clic en el botón revisar
-      $("[name='btn-revisar']").on("click",function(){
+      $("[name='btn-revisar']").on("click", function () {
          $.fn.validar_todo_el_formulario();
          $.fn.revisar_formulario();
       });
@@ -578,32 +580,141 @@
          $.fn.imprimir_avance();
       });
 
-      if(ajustes.ver_que_control_name == true){
-         $.each($(ajustes.paginas).find(".form-group").find("input,select,textarea"),function(){
-            var padre = $(this).parent();
-            var control_name = padre.prop("tagName");
-            var name_ = "";
-            if($(this).attr("name")){
-               name_ = "name: "+$(this).attr("name");
-            }else{
-               name_ = "(no name)";
+      if (ajustes.ver_que_control_name == true) {
+         $.each(
+            $(ajustes.paginas)
+               .find(".form-group")
+               .find("input,select,textarea"),
+            function () {
+               var padre = $(this).parent();
+               var control_name = padre.prop("tagName");
+               var name_ = "";
+               if ($(this).attr("name")) {
+                  name_ = "name: " + $(this).attr("name");
+               } else {
+                  name_ = "(no name)";
+               }
+               var html = "<div class='rbp-control-name'>" + name_ + "</div>";
+               padre.prepend(html);
             }
-            var html = "<div class='rbp-control-name'>"+name_+"</div>";
-            padre.prepend(html);
-         });
+         );
       }
-      
    };
 
    $.fn.paginador.defaults = {
       paginas: ".rbp-slide",
-      boton_guardar:function(){
-         alert("Utilice la propiedad <b>$.fn.paginador.defaults.btn_guardar</b> para especificar una función que se ejecute al hacer clic en el botón <b>guardar</b>.");
+      boton_guardar: function () {
+         alert(
+            "Utilice la propiedad <b>$.fn.paginador.defaults.btn_guardar</b> para especificar una función que se ejecute al hacer clic en el botón <b>guardar</b>."
+         );
       },
-      boton_enviar:function(){
-         alert("Utilice la propiedad <b>$.fn.paginador.defaults.btn_enviar</b> para especificar una función que se ejecute al hacer clic en el botón <b>enviar</b>.");
+      boton_enviar: function () {
+         alert(
+            "Utilice la propiedad <b>$.fn.paginador.defaults.btn_enviar</b> para especificar una función que se ejecute al hacer clic en el botón <b>enviar</b>."
+         );
       },
-      ver_que_control:false
+      ver_que_control: false,
    };
 
+   $.fn.menuLateral = function (ajustes) {
+
+      // ajustes iniciales
+      var ajustes = $.extend(
+         {
+            caption: "Opciones",
+            titulo: "¿Qué desea hacer?",
+            pie: "www.rafaelblanco.net",
+            botones: ["Botón No.1", "Botón No.2", "Botón No.3"],
+            botonesFunciones: [
+               function () {
+                  alert("Acciones para el botón No.1");
+               },
+               function () {
+                  alert("Acciones para el botón No.2");
+               },
+               function () {
+                  alert("Acciones para el botón No.3");
+               },
+            ],
+            colorFondo: "#121232",
+            colorTextos: "#ffffff",
+            colorBloqueo:"rgba(0,0,0,0.25)"
+         },
+         $.fn.menuLateral.defaults,
+         ajustes
+      );
+
+      var opciones_html = '';
+      var contador = 0;
+      $.each(ajustes.botones,function(){
+         opciones_html += '\n\
+         <div class="col-12 __boton">\n\
+            <div><span style="color:'+ajustes.colorTextos+'">'+ajustes.botones[contador]+'</span></div>\n\
+         </div>';
+         contador++;
+      });
+
+      // inicio del plugin
+      var html =
+         '\n\
+        <div class="rbp-opciones-laterales __RBP_BARRA_LATERAL__" style="background-color:'+ajustes.colorBloqueo+';">\n\
+            <div class="container-fluid h-100">\n\
+                <div class="row justify-content-end h-100">\n\
+                    <div class="__OPCIONES_LATERAL_VENTANA__ col-12 col-sm-9 col-lg-5 col-xl-4 col-xxl-3 col-md-6 px-0 h-100 rbp-opciones-laterales-sombra rbp-op-cont" style="overflow-y: scroll; background-color:'+ajustes.colorFondo+'">\n\
+                        <div class="sticky row mx-0 justify-content-end rbp-ops-lateral-barra-superior" style="background-color:'+ajustes.colorFondo+'">\n\
+                            <div class="col-auto px-0">\n\
+                                <div class="rbp-btn-cerrar ____RBP_BOTON_CERRAR___">\n\
+                                    <svg style="color:'+ajustes.colorTextos+';" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x" fill="currentColor"\n\
+                                        xmlns="http://www.w3.org/2000/svg">\n\
+                                        <path fill-rule="evenodd"\n\
+                                            d="M11.854 4.146a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708-.708l7-7a.5.5 0 0 1 .708 0z" />\n\
+                                        <path fill-rule="evenodd"\n\
+                                            d="M4.146 4.146a.5.5 0 0 0 0 .708l7 7a.5.5 0 0 0 .708-.708l-7-7a.5.5 0 0 0-.708 0z" />\n\
+                                    </svg>\n\
+                                </div>\n\
+                            </div>\n\
+                        </div>\n\
+                        <div class="row mx-0 rbp-bar-lateral-sombra-sup">\n\
+                            <div class="col-12 mt-4 rbp-op-lateral-titulos">\n\
+                                <div class="caption" style="color:'+ajustes.colorTextos+';">'+ajustes.caption+'</div>\n\
+                                <h5 style="color:'+ajustes.colorTextos+';">'+ajustes.titulo+'</h5>\n\
+                            </div>\n\
+                            <div class="col w-100"></div>\n\
+                            <div style="height: 20px;" class="w-100"></div>\n\
+                            <div class="row w-100 mx-0 px-0 pl-2 rbp-opciones-btn">\n\
+                                '+opciones_html+'\n\
+                            </div>\n\
+                        </div>\n\
+                        <div class="__pie" style="color:'+ajustes.colorTextos+';">\n\
+                           '+ajustes.pie+'\n\
+                        </div>\n\
+                    </div>\n\
+                </div>\n\
+            </div>\n\
+        </div>\n\
+        ';
+
+      // imprimo el html
+      $("body").prepend(html);
+
+      gsap.from(".__RBP_BARRA_LATERAL__", {opacity: 0, duration: .5,onComplete:function(){
+         var contador2 = 0;
+         // se asignan las funciones a cada botón
+         $.each($(".rbp-opciones-btn>.__boton"),function(){
+            $(this).on("click",function(){
+               ajustes.botonesFunciones[contador2]();
+               contador2++;
+            });
+         });
+      }});
+
+      // activo el boton de cierrre
+
+      $(".____RBP_BOTON_CERRAR___").on("click", function () {
+         gsap.to(".__RBP_BARRA_LATERAL__", {opacity: 0, duration: .25,onComplete:function(){
+            $(".__RBP_BARRA_LATERAL__").remove();
+         }});
+      });
+      
+   };
 })(jQuery);

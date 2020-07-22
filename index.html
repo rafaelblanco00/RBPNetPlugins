@@ -116,6 +116,8 @@
         </div>
     </div>
 
+    <div class="____RBP_BOTON_CERRAR2___">Menu lateral</div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
     <script src="RBPNet/plugins/RBPNetPlugins.min.js"></script>
@@ -131,12 +133,19 @@
         // Tus javascripts de prueba acá 
         // Plantilla jQuery para ejecución del paginador
         $(document).ready(function () {
+
             $("[name='form-001']").smallHelp.defaults.ver_que_tip = false;
             $("[name='form-001']").smallHelp();
 
             $("[name='form-001']").paginador.defaults.ver_que_control_name = false;
             $("[name='form-001']").paginador();
+
+            $(".____RBP_BOTON_CERRAR2___").on("click",function(){
+                $.fn.menuLateral();
+            });
+
         });
+
     </script>
 
 </body>
