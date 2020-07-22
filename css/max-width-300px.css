@@ -1,0 +1,5 @@
+@media (max-device-width:300px) {
+  body {
+    display: block;
+  }
+}

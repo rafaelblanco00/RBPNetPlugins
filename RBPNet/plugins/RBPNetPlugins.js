@@ -263,14 +263,14 @@
          <nav aria-label="...">\n\
                <ul class="pagination">\n\
                   <li class="page-item">\n\
-                     <a class="page-link" href="#" data-boton-anterior>\n\
+                     <a class="page-link rbp-btn-ant" href="#" data-boton-anterior>\n\
                      <span class="d-none d-sm-block">Anterior</span>\n\
                      <span class="d-block d-sm-none">Ant.</span>\n\
                      </a>\n\
                   </li>\n\
                   \n\
                   <li class="page-item">\n\
-                     <a class="page-link" href="#" data-boton-siguiente>\n\
+                     <a class="page-link rbp-btn-sig" href="#" data-boton-siguiente>\n\
                      <span class="d-none d-sm-block">Siguiente</span>\n\
                      <span class="d-block d-sm-none">Sig.</span>\n\
                      </a>\n\
@@ -361,7 +361,7 @@
          $(".pagination li:last-child").before(
             '<li data-page-id="' +
                i +
-               '" class="page page-item"><a class="page-link" href="#">' +
+               '" class="page page-item"><a class="page-link rbp-page-link" href="#">' +
                (i + 1) +
                "</a></li>"
          );

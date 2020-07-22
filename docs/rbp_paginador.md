@@ -174,34 +174,38 @@ Al gregar un slide a nuestra plantilla inicial el resultado debe ser el siguient
 ````html
 <!-- Plantilla de un paginador a 6 columnas de ancho, de una página y sin controles de formularios -->
 <div class="container col-6">
-   <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+   <div class="row justify-content-center">
+      <div class="col col-11 col-sm-10 col-md-10">
+         <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
 
-      <div class="row" data-slides-cont>
-         <div class="col">
+            <div class="row" data-slides-cont>
+               <div class="col">
 
-               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+                     <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
 
-                  <!-- Aquí debe agregar los controles de formulario que necesite -->
+                        <!-- Aquí debe agregar los controles de formulario que necesite -->
 
-               </div>
+                     </div>
 
-         </div>
-      </div>
-
-      <div class="form-row" data-paginador-botones>
-            <div class="col-12 col-lg-5">
-               <button class="btn btn-primary w-100" name="guardar-btn-001"
-                  type="button">Guardar</button>
-               <div class="btn-group w-100" role="group" aria-label="Button group">
-                  <button class="btn btn-secondary" name="btn-revisar"
-                        type="button">Revisar</button>
-                  <button class="btn btn-secondary" name="btn-enviar"
-                        type="button">Enviar</button>
                </div>
             </div>
-      </div><br />
 
-   </form>
+            <div class="form-row" data-paginador-botones>
+                  <div class="col-12 col-lg-5">
+                     <button class="btn btn-primary w-100" name="guardar-btn-001"
+                        type="button">Guardar</button>
+                     <div class="btn-group w-100" role="group" aria-label="Button group">
+                        <button class="btn btn-secondary" name="btn-revisar"
+                              type="button">Revisar</button>
+                        <button class="btn btn-secondary" name="btn-enviar"
+                              type="button">Enviar</button>
+                     </div>
+                  </div>
+            </div><br />
+
+         </form>
+      </div>
+   </div>
 </div>
 ````
 
@@ -270,57 +274,61 @@ Si agregamos estos tres controles de formulario en nuestra plantilla general el 
 ````html
 <!-- Plantilla de prueba -->
 <!-- Paginador a 6 columnas de ancho, de una página con 3 controles de formulario (1 input, 1 select y 1 textarea) -->
-<div class="container col-6">
-   <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+<div class="container">
+   <div class="row justify-content-center">
+      <div class="col col-11 col-sm-10 col-md-10">
+         <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
 
-      <div class="row" data-slides-cont>
-         <div class="col">
+            <div class="row" data-slides-cont>
+               <div class="col">
 
-               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
-                  
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <input required type="text" class="form-control" />
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
-                  </div>
+                     <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+                        
+                        <!-- control de formulario tipo input -->
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                           <label for="">Etiqueta del control de formulario</label>
+                           <input required type="text" class="form-control" />
+                           <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                        </div>
 
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <select required class="custom-select">
-                        <option value="">(No hay selección)</option>
-                        <option value="">__OPCION__</option>
-                     </select>
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
-                  </div>
+                        <!-- control de formulario tipo input -->
+                        <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                           <label for="">Etiqueta del control de formulario</label>
+                           <select required class="custom-select">
+                              <option value="">(No hay selección)</option>
+                              <option value="">__OPCION__</option>
+                           </select>
+                           <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                        </div>
 
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-lg-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
-                  </div>
+                        <!-- control de formulario tipo input -->
+                        <div class="form-group col-lg-12">
+                           <label for="">Etiqueta del control de formulario</label>
+                           <textarea required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
+                           <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                        </div>
 
-               </div>
+                     </div>
 
-         </div>
-      </div>
-
-      <div class="form-row" data-paginador-botones>
-            <div class="col-12 col-lg-5">
-               <button class="btn btn-primary w-100" name="guardar-btn-001"
-                  type="button">Guardar</button>
-               <div class="btn-group w-100" role="group" aria-label="Button group">
-                  <button class="btn btn-secondary" name="btn-revisar"
-                        type="button">Revisar</button>
-                  <button class="btn btn-secondary" name="btn-enviar"
-                        type="button">Enviar</button>
                </div>
             </div>
-      </div><br />
 
-   </form>
+            <div class="form-row" data-paginador-botones>
+                  <div class="col-12 col-lg-5">
+                     <button class="btn btn-primary w-100" name="guardar-btn-001"
+                        type="button">Guardar</button>
+                     <div class="btn-group w-100" role="group" aria-label="Button group">
+                        <button class="btn btn-secondary" name="btn-revisar"
+                              type="button">Revisar</button>
+                        <button class="btn btn-secondary" name="btn-enviar"
+                              type="button">Enviar</button>
+                     </div>
+                  </div>
+            </div><br />
+
+         </form>
+      </div>
+   </div>
 </div>
 ````
 ### Ejemplo 2: formulario a 2 páginas
@@ -328,80 +336,99 @@ Si agregamos estos tres controles de formulario en nuestra plantilla general el 
 Si agregamos un segundo <code>slide</code> con otros controles de formulario como dos campos de texto, el resultado sería el siguiente y en este caso, el paginador estaria visible ya que el formulario cuenta con mas de una página:
 
 ````html
+<!-- pruebas aquí -->
 <!-- Plantilla de prueba -->
 <!-- Paginador a 6 columnas de ancho, de una página con 3 controles de formulario (1 input, 1 select y 1 textarea) -->
-<div class="container col-6">
-   <form novalidate name="form-001" data-rbp-paginador-form-id="1" action="" class="needs-validation col-lg-12 px-0">
+<div class="container ">
+   <div class="row justify-content-center">
+      <div class="col col-11 col-sm-10 col-md-10">
+            <form novalidate name="form-001" data-rbp-paginador-form-id="1" action=""
+               class="needs-validation col-lg-12 px-0">
 
-      <div class="row" data-slides-cont>
-         <div class="col">
+               <div class="row" data-slides-cont>
+                  <div class="col">
 
-               <!-- slide o página no.1 con 3 controles de formulario -->
-               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
-                  
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <input name="" required type="text" class="form-control" />
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                        <!-- slide o página no.1 con 3 controles de formulario -->
+                        <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+
+                           <!-- control de formulario tipo input -->
+                           <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                              <label for="">Etiqueta del control de formulario</label>
+                              <input name="" required type="text" class="form-control" />
+                              <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo
+                                    que
+                                    sugiere la etiqueta del control de formulario.</small>
+                           </div>
+
+                           <!-- control de formulario tipo input -->
+                           <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                              <label for="">Etiqueta del control de formulario</label>
+                              <select name="" required class="custom-select">
+                                    <option value="">(No hay selección)</option>
+                                    <option value="">__OPCION__</option>
+                              </select>
+                              <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo
+                                    que
+                                    sugiere la etiqueta del control de formulario.</small>
+                           </div>
+
+                           <!-- control de formulario tipo input -->
+                           <div class="form-group col-lg-12">
+                              <label for="">Etiqueta del control de formulario</label>
+                              <textarea name="" required maxlength="250" class="form-control" cols="30"
+                                    rows="5"></textarea>
+                              <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo
+                                    que
+                                    sugiere la etiqueta del control de formulario.</small>
+                           </div>
+
+                        </div>
+
+                        <!-- slide o página no.2 con dos controles de formulario-->
+                        <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
+
+                           <!-- control de formulario tipo input -->
+                           <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                              <label for="">Etiqueta del control de formulario</label>
+                              <input name="" required type="text" class="form-control" />
+                              <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo
+                                    que
+                                    sugiere la etiqueta del control de formulario.</small>
+                           </div>
+
+                           <!-- control de formulario tipo input -->
+                           <div class="form-group col-lg-12">
+                              <label for="">Etiqueta del control de formulario</label>
+                              <textarea name="" required maxlength="250" class="form-control" cols="30"
+                                    rows="5"></textarea>
+                              <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo
+                                    que
+                                    sugiere la etiqueta del control de formulario.</small>
+                           </div>
+
+                        </div>
+
                   </div>
-
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <select name="" required class="custom-select">
-                        <option value="">(No hay selección)</option>
-                        <option value="">__OPCION__</option>
-                     </select>
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
-                  </div>
-
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-lg-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <textarea name="" required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
-                  </div>
-
                </div>
 
-               <!-- slide o página no.2 con dos controles de formulario-->
-               <div class="rbp-slide form-row" data-slide-titulo="Información inicial">
-                  
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <input name="" required type="text" class="form-control" />
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+               <div class="form-row" data-paginador-botones>
+                  <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+                        <input type="button" value="Guardar" name="guardar-btn-001" class="btn btn-primary col" />
                   </div>
-
-                  <!-- control de formulario tipo input -->
-                  <div class="form-group col-lg-12">
-                     <label for="">Etiqueta del control de formulario</label>
-                     <textarea name="" required maxlength="250" class="form-control" cols="30" rows="5"></textarea>
-                     <small class="form-text text-muted" data-rbp-small-help="t1">Tip relacionado con lo que sugiere la etiqueta del control de formulario.</small>
+                  <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+                        <input type="button" value="Revisar" name="btn-revisar" class="btn btn-secondary col" />
                   </div>
+                  <div class="w-100"></div>
+                  <div class="col-2 col-sm-3 col-md-2 col-lg-2 col-xl-2 pr-0">
+                        <input type="button" value="Enviar" name="btn-enviar" class="btn btn-secondary col" />
+                  </div>
+               </div><br />
 
-               </div>
-
-         </div>
+            </form>
       </div>
-
-      <div class="form-row" data-paginador-botones>
-            <div class="col-12 col-lg-5">
-               <button class="btn btn-primary w-100" name="guardar-btn-001"
-                  type="button">Guardar</button>
-               <div class="btn-group w-100" role="group" aria-label="Button group">
-                  <button class="btn btn-secondary" name="btn-revisar"
-                        type="button">Revisar</button>
-                  <button class="btn btn-secondary" name="btn-enviar"
-                        type="button">Enviar</button>
-               </div>
-            </div>
-      </div><br />
-
-   </form>
+   </div>
 </div>
+
 ````
 
 !> Tenga en cuenta que nuestro paginador utilizar <code>smallHelp</code> para mostrar textos de ayuda en cada uno de los controles de formualrio, de esta forma, si desea saber mas del control de nuestro <code>smallHelp</code> te invitamos a revisar la documentación relacionada haciendo clic [aquí](rbp_small_help.md)

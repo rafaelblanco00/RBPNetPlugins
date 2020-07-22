@@ -1,0 +1,8 @@
+/* este media query es para pruebas por medio del uso de DevTools de Google Chrome */
+/* no es necesario declarar reglas en esta hoja de estilos */
+/* dejar en blanco */
+@media (max-device-width:4000px){
+    body{
+        display: block;
+    }
+}
