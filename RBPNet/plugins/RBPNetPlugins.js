@@ -259,20 +259,26 @@
 
       var paginador_html =
          '\n\
-      <div style="height:20px;"></div>\n\
-      <nav aria-label="...">\n\
-            <ul class="pagination">\n\
-               <li class="page-item">\n\
-                  <a class="page-link" href="#" data-boton-anterior>Anterior</a>\n\
-               </li>\n\
-               \n\
-               <li class="page-item">\n\
-                  <a class="page-link" href="#" data-boton-siguiente>Siguiente</a>\n\
-               </li>\n\
-            </ul>\n\
-      </nav>\n\
-      <div style="height:5px;"></div>\n\
-      ';
+         <div style="height:20px;"></div>\n\
+         <nav aria-label="...">\n\
+               <ul class="pagination">\n\
+                  <li class="page-item">\n\
+                     <a class="page-link" href="#" data-boton-anterior>\n\
+                     <span class="d-none d-sm-block">Anterior</span>\n\
+                     <span class="d-block d-sm-none">Ant.</span>\n\
+                     </a>\n\
+                  </li>\n\
+                  \n\
+                  <li class="page-item">\n\
+                     <a class="page-link" href="#" data-boton-siguiente>\n\
+                     <span class="d-none d-sm-block">Siguiente</span>\n\
+                     <span class="d-block d-sm-none">Sig.</span>\n\
+                     </a>\n\
+                  </li>\n\
+               </ul>\n\
+         </nav>\n\
+         <div style="height:5px;"></div>\n\
+         ';
 
       var dur = 0.25;
       var form_ = $(this);
