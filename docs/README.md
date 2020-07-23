@@ -48,7 +48,7 @@ Nuestro Menú lateral desarrollado con HTML, CSS, jQuery y GSAP es una forma pr�
 
 <img src="_media/menu-lateral/rbp-menu-lateral-banner.png"/>
 
-> <b>Nota importante:</b> Este menú de opciones ¡es espectucular! y gratís, te invito a que lo utilices. Si deseas saber más haz clic [aquí](rbp_paginador.md)
+> <b>Nota importante:</b> Este menú de opciones ¡es espectucular! y gratís, te invito a que lo utilices. Si deseas saber más haz clic [aquí](rbp_menu_lateral.md)
 
 
 
