@@ -205,6 +205,12 @@ Si aún no haz descargado nuestro plugin te invitamos a descargarlo haciendo cli
 
 <img src="_media/primeros_pasos/descarga-repositorio.png"/>
 
-!> Utiliza la imagen de referencia para proceder con la descarga de los archivos necesarios. Ten en cuenta que al descargar, nuestro repositorio en <code>GitHub</code> te brindara un archivo en formato <code>Zip</code> de nombre <code>RBPNetPlugins-master</code> y al descomprimirlo solo debes utilizar los ficheros: <code>RBPNet</code> y <code>scss</code> y ubicarlos en tu carpeta de proyecto de <code>Bootstrap</code> como se explicó anteriormente.
+!> Utiliza la imagen de referencia para proceder con la descarga de los archivos necesarios. Ten en cuenta que al descargar, nuestro repositorio en <code>GitHub</code> te permitirá acceder a un archivo en formato <code>Zip</code> de nombre <code>RBPNetPlugins-master</code> y al descomprimirlo solo debes utilizar los ficheros: <code>RBPNet</code>, <code>SCSS</code> y <code>CSS</code> y ubicarlos en tu carpeta de proyecto de <code>Bootstrap</code> como se explicó anteriormente.
 
-En este punto ya estas todo listo para proceder con la utilización de nuestro plugin en tus proyectos. [Volver al inicio](README.md)
+En este punto ya esta todo listo para proceder con la utilización de nuestro plugin en tus proyectos. [Volver al inicio](README.md)
+
+> <b>¡Tu apoyo es muy importante para mi!</b><br>
+> * Utiliza el siguiente botón si deseas apoyar mi trabajo y asi porder seguir construyendo este tipo de recursos. 
+> * Recuerda que estos desarrollos son grátis y estan disponibles para que puedan se utilizados en proyectos web basados en Bootstrap. 
+
+<a target="_blank" href="https://www.buymeacoffee.com/rafaelblanco">![Buy me a Coffe!](_media/BuyMeACoffe-02.png)</a>
