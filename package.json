@@ -1,0 +1,25 @@
+{
+  "name": "rbpnetplugin.js",
+  "version": "1.0.0",
+  "description": "Una mágica forma de hacer la vida más fácil con Bootstrap",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelblanco00/RBPNetPlugins.git"
+  },
+  "keywords": [
+    "Bootstrap"
+  ],
+  "author": "Rafael A. Blanco P.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelblanco00/RBPNetPlugins/issues"
+  },
+  "homepage": "https://github.com/rafaelblanco00/RBPNetPlugins#readme"
+}
