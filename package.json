@@ -1,6 +1,6 @@
 {
   "name": "rbpnetplugins",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Una mágica forma de hacer la vida más fácil con Bootstrap",
   "main": "index.js",
   "directories": {
