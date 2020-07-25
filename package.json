@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/rafaelblanco00/RBPNetPlugins/issues"
   },
-  "homepage": "https://rafaelblanco.net"
+  "homepage": "https://rafaelblanco.net",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
 }
