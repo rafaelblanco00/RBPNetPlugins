@@ -11049,11 +11049,6 @@ a.text-dark:hover, a.text-dark:focus {
           justify-content: center;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .rbp-icono-final::after {
   font-family: Material Icons;
   /*			background-color: grey;*/

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* BOTONES DE PAGINACION */
+/* BOTONES DE PAGINACION */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ nav .page-item.active > a,
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ nav .page-item.active > a:hover {
+  background-color: #0083ca !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
+}
+
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ nav .page-item.active > a {
+  color: white !important;
+}
+
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ nav .page-item .page-link {
+  background-color: black !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ nav .page-item .page-link:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* etiqueta del control de formulario */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ label {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* area desplegable de la ayuda -Small Help- */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ small {
+  color: rgba(255, 255, 255, 0.65) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* area desplegable de la ayuda enfasis -Small Help- */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ small b,
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ small strong,
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ small code {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* botón -Small Help- */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .rbp-small-help-btn {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* controles de formulario */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ input,
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ select,
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ textarea {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: black !important;
+  color: white !important;
+}
+
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ select option {
+  color: white;
+  background-color: black;
+}
+
+/* titulo de página o slice */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ h6 {
+  color: white !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+/* area del pié */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .slide-pie {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* area del pié enfasis */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .slide-pie b,
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .slide-pie strong,
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .slide-pie code {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* BOTONES */
+/* BOTONES */
+/* BOTONES */
+/* boton PRIMARIO */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .btn-primary {
+  color: white !important;
+  background-color: #0083ca !important;
+  border-color: #0083ca !important;
+}
+
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .btn-primary:hover {
+  color: white !important;
+  background-color: #006ea9 !important;
+  border-color: #006ea9 !important;
+}
+
+/* boton SECUNDARIO */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .btn-secondary {
+  color: white !important;
+  background-color: transparent !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .btn-secondary:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: white !important;
+}
+
+/* boton TERCIARIO */
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .btn-terciary {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.__RBP_CSS_FORM__.__SKIN_NEGRO__ .btn-terciary:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+/*# sourceMappingURL=rbp-paginador-skin.css.map */

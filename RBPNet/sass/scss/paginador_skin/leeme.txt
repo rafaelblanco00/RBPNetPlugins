@@ -1,0 +1,18 @@
+para crear un nuevo SKIN siga los siguientes pasos:
+
+- duplique el directorio de un SKIN existente.
+- y coloquele el nombre de desee (ej. skin-azul).
+- dentro de la nueva carpeta abra el archivo rbp-paginador-skin.scss.
+- ya en el archivo abierto diríjase a la línea de código no.1.
+- cambie el nombre de la variable $nombre-de-clase.
+- recuerda la sistaxis que utilizap ara la escritura de esta (ej. __SKIN_AZUL__).
+- procece la hoja de estilos scss para generar un nuevo css.
+
+listo
+
+¿cómo utilizarlo?
+
+- agregue la hoja de estílo css procesada a su página web.
+- en la plantilla del paginador coloque el nombre de clase (ej. __SKIN_AZUL__) como una clase adicional en la etiqueta <form> del mismo.
+
+

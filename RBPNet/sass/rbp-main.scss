@@ -2,14 +2,9 @@
 @import "../../../bootstrap/scss/bootstrap.scss";
 @import "scss/rbp_bootstrap_main_after";
 
-body {
-	margin: 0;
-	padding: 0;
-}
-
-@import "scss/_rbp_variables";
-@import "scss/_rbp_botones";
-@import "scss/_rbp_ventana_modal";
-@import "scss/_rbp_small_help";
-@import "scss/_rbp_paginador";
-@import "scss/_rbp_menu_lateral";
+@import "scss/rbp_variables";
+@import "scss/rbp_botones";
+@import "scss/rbp_ventana_modal";
+@import "scss/rbp_small_help";
+@import "scss/rbp_paginador";
+@import "scss/rbp_menu_lateral";

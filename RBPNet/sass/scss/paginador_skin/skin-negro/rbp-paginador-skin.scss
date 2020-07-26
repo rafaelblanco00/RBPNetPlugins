@@ -1,0 +1,200 @@
+$nombre-de-clase:"__SKIN_NEGRO__";
+
+$botones-de-paginacion: (
+    "color-de-fondo":black,
+    "color-de-fondo-resaltado":rgba(255,255,255,0.15),
+    "color-del-borde": rgba(255,255,255,.5),
+    "color-de-texto-normal": rgba(255,255,255,.5),
+    "color-de-pagina-actual":#0083ca,
+    "color-de-texto-pagina-actual": white
+);
+
+$slides:(
+    "color-del-titulo":white,
+    "color-de-filetes":rgba(255,255,255,0.25)
+);
+
+$controles-de-formulario:(
+    "color-de-texto-de-las-etiquetas":rgba(255,255,255,0.5),
+    "color-de-texto-de-los-controles":white,
+    "color-de-fondo-de-los-controles":black,
+    "color-del-borde-de-los-controles":rgba(255,255,255,0.5)
+);
+
+$small-help:(
+    "color-boton-ayuda":rgba(255,255,255,0.25),
+    "tip-ayuda-color-de-fondo":rgba(255,255,255,0.05),
+    "tip-ayuda-color-del-borde":rgba(255,255,255,0.2),
+    "tip-ayuda-color-del-texto":rgba(255,255,255,0.65),
+    "tip-ayuda-color-de-enfasis":rgba(255,255,255,0.6)
+);
+
+$pie:(
+    "color-del-texto":rgba(255,255,255,0.5),
+    "color-de-enfasis":rgba(255,255,255,0.75)
+);
+
+$botones-primarios-normal:(
+    "color-de-texto":white,
+    "color-de-fondo":#0083ca,
+    "color-del-borde":#0083ca
+);
+
+$botones-primarios-hover:(
+    "color-de-texto":white,
+    "color-de-fondo":#006ea9,
+    "color-del-borde":#006ea9
+);
+
+$botones-secundarios-normal:(
+    "color-de-texto":white,
+    "color-de-fondo":transparent,
+    "color-del-borde":rgba(255,255,255,.5)
+);
+
+$botones-secundarios-hover:(
+    "color-de-texto":white,
+    "color-de-fondo":rgba(255,255,255,0.15),
+    "color-del-borde":white
+);
+
+$botones-terciarios-normal:(
+    "color-de-texto":white,
+    "color-de-fondo":rgba(255,255,255,0.1),
+    "color-del-borde":rgba(255,255,255,0.1)
+);
+
+$botones-terciarios-hover:(
+    "color-de-texto":white,
+    "color-de-fondo":rgba(255,255,255,0.15),
+    "color-del-borde":rgba(255,255,255,0.1)
+);
+
+/* BOTONES DE PAGINACION */
+/* BOTONES DE PAGINACION */
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} nav .page-item.active>a,
+.__RBP_CSS_FORM__.#{$nombre-de-clase} nav .page-item.active>a:hover
+{
+    background-color: map-get($botones-de-paginacion , "color-de-pagina-actual" ) !important;
+    border-color: map-get($botones-de-paginacion , "color-del-borde" ) !important;
+    color: map-get($botones-de-paginacion , "color-de-texto-pagina-actual" ) !important;
+}
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} nav .page-item.active>a{
+    color: map-get($botones-de-paginacion , "color-de-texto-pagina-actual" ) !important;
+}
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} nav .page-item .page-link{
+    background-color: map-get($botones-de-paginacion , "color-de-fondo" ) !important;
+    border-color: map-get($botones-de-paginacion , "color-del-borde" ) !important;
+    color:map-get($botones-de-paginacion , "color-de-texto-normal" ) !important;
+}
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} nav .page-item .page-link:hover{
+    background-color: map-get($botones-de-paginacion, "color-de-fondo-resaltado") !important;
+    color: map-get($botones-de-paginacion, "color-de-texto-normal") !important;
+}
+
+/* etiqueta del control de formulario */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} label {
+    color: map-get($controles-de-formulario, "color-de-texto-de-las-etiquetas") !important;
+}
+
+/* area desplegable de la ayuda -Small Help- */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} small {
+    color: map-get($small-help,"tip-ayuda-color-del-texto") !important;
+    background-color: map-get($small-help,"tip-ayuda-color-de-fondo") !important;
+    border-color: map-get($small-help,"tip-ayuda-color-del-borde") !important;
+}
+
+/* area desplegable de la ayuda enfasis -Small Help- */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} small b,
+.__RBP_CSS_FORM__.#{$nombre-de-clase} small strong,
+.__RBP_CSS_FORM__.#{$nombre-de-clase} small code {
+    color: map-get($small-help,"tip-ayuda-color-de-enfasis") !important;
+}
+
+/* botón -Small Help- */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .rbp-small-help-btn{
+    color: map-get($small-help,"color-boton-ayuda");
+}
+
+/* controles de formulario */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} input,
+.__RBP_CSS_FORM__.#{$nombre-de-clase} select,
+.__RBP_CSS_FORM__.#{$nombre-de-clase} textarea {
+    border-color: map-get($controles-de-formulario,"color-del-borde-de-los-controles") !important;
+    background-color: map-get($controles-de-formulario,"color-de-fondo-de-los-controles") !important;
+    color:map-get($controles-de-formulario,"color-de-texto-de-los-controles") !important;
+}
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} select option{
+    color: map-get($controles-de-formulario,"color-de-texto-de-los-controles");
+    background-color: map-get($controles-de-formulario,"color-de-fondo-de-los-controles");
+}
+
+/* titulo de página o slice */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} h6 {
+    color: map-get($slides, color-del-titulo) !important;
+    border-color: map-get($slides, "color-de-filetes") !important;
+}
+
+/* area del pié */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .slide-pie {
+    border-color:map-get($slides, color-de-filetes) !important;
+    color: map-get($pie, color-del-texto) !important;
+}
+
+/* area del pié enfasis */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .slide-pie b,
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .slide-pie strong,
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .slide-pie code{
+    color:map-get($pie, color-de-enfasis) !important;
+}
+
+/* BOTONES */
+/* BOTONES */
+/* BOTONES */
+
+/* boton PRIMARIO */
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .btn-primary{
+    color: map-get($botones-primarios-normal,"color-de-texto") !important;
+    background-color: map-get($botones-primarios-normal,"color-de-fondo") !important;
+    border-color: map-get($botones-primarios-normal,"color-del-borde") !important;
+}
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .btn-primary:hover{
+    color: map-get($botones-primarios-hover,"color-de-texto") !important;
+    background-color: map-get($botones-primarios-hover,"color-de-fondo") !important;
+    border-color: map-get($botones-primarios-hover,"color-del-borde") !important;
+}
+
+/* boton SECUNDARIO */
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .btn-secondary{
+    color: map-get($botones-secundarios-normal,"color-de-texto") !important;
+    background-color: map-get($botones-secundarios-normal,"color-de-fondo") !important;
+    border-color: map-get($botones-secundarios-normal,"color-del-borde") !important;
+}
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .btn-secondary:hover{
+    color: map-get($botones-secundarios-hover,"color-de-texto") !important;
+    background-color: map-get($botones-secundarios-hover,"color-de-fondo") !important;
+    border-color: map-get($botones-secundarios-hover,"color-del-borde") !important;
+}
+
+/* boton TERCIARIO */
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .btn-terciary{
+    color: map-get($botones-terciarios-normal,"color-de-texto") !important;
+    background-color: map-get($botones-terciarios-normal,"color-de-fondo") !important;
+    border-color: map-get($botones-terciarios-normal,"color-del-borde") !important;
+}
+
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .btn-terciary:hover{
+    color: map-get($botones-terciarios-hover,"color-de-texto") !important;
+    background-color: map-get($botones-terciarios-hover,"color-de-fondo") !important;
+    border-color: map-get($botones-terciarios-hover,"color-del-borde") !important;
+}
