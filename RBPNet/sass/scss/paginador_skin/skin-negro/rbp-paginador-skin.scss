@@ -18,7 +18,8 @@ $controles-de-formulario:(
     "color-de-texto-de-las-etiquetas":rgba(255,255,255,0.5),
     "color-de-texto-de-los-controles":white,
     "color-de-fondo-de-los-controles":black,
-    "color-del-borde-de-los-controles":rgba(255,255,255,0.5)
+    "color-del-borde-de-los-controles":rgba(255,255,255,0.5),
+    "color-del-texto-que-control-name":rgba(255,255,255,0.5)
 );
 
 $small-help:(
@@ -121,6 +122,9 @@ $botones-terciarios-hover:(
 }
 
 /* controles de formulario */
+.__RBP_CSS_FORM__.#{$nombre-de-clase} .rbp-control-name{
+    color:map-get($controles-de-formulario,"color-del-texto-que-control-name") !important;
+}
 .__RBP_CSS_FORM__.#{$nombre-de-clase} input,
 .__RBP_CSS_FORM__.#{$nombre-de-clase} select,
 .__RBP_CSS_FORM__.#{$nombre-de-clase} textarea {
